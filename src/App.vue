@@ -1,47 +1,42 @@
 <template>
-  <div class="app">
-    <button @click="changeName('zelda')">change name</button>
-    <button @click="changeAge('35')">change age</button>
-  </div>
-  <img alt="My logo" src="./assets/logo.png">
-  <div class="justify-center flex bg-yellow-300 items-center h-screen">
-    <div class="text-4xl">
-      Hello 👋🏼
-      <p>{{ name }} - {{ age }}</p>
-    </div>
+  <!-- Background Animation -->
+  <particles id="tsparticles" :options="particlesOptions" />
+
+  <!-- Main container -->
+  <div id="main">
+    <app-navigation />
+
+    <router-view v-slot="{ Component }">
+      <!-- Ghost component used to load components dynamically -->
+      <transition name="fade" mode="out-in">
+        <component :is="Component"></component>
+      </transition>
+    </router-view>
   </div>
 </template>
 
 <script lang="ts">
-import {defineComponent} from 'vue';
+import { defineComponent } from 'vue';
+import AppNavigation from '@/components/Navigation.vue';
+import { particlesOptions } from '@/assets/particlesOptions';
 
 export default defineComponent({
-  name: 'App',
-  components: {},
+  components: { AppNavigation },
   data() {
-    return {
-      name: 'Link' as string,
-      age: 25 as number | string
-    }
+    return { particlesOptions };
   },
-  methods: {
-    changeName(name: string) {
-      this.name = name;
-    },
-    changeAge(age: string | number) {
-      this.age = age;
-    }
-  }
 });
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.fade-enter-from {
+  opacity: 0;
+}
+.fade-enter-active {
+  transition: all 0.5s linear;
+}
+.fade-leave-to {
+  transition: all 0.5s linear;
+  opacity: 0;
 }
 </style>
