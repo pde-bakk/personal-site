@@ -9,7 +9,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import './styles/app.css'
 
 export default defineComponent({
   name: 'App',
