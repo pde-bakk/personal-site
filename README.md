@@ -1,30 +1,25 @@
-# portfolio-site-ts
+# Portfolio
+This my personal website that features my resume in great detail. It was a fun way for me to try out my front-end skills with vue and typescript. The website can be accessed [here](https://portfolio-3mno24qnr-sandraroz.vercel.app/).
 
 ## Project setup
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
+yarn build
 ```
 
 ### Lints and fixes files
 ```
-npm run lint
+yarn lint
 ```
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-# personal-site

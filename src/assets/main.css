@@ -1,0 +1,30 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+i {
+  font-size: 48px;
+}
+
+nav {
+  padding-bottom: 32px;
+}
+
+#fancy {
+  font-family: Handlee, serif;
+}
+
+#main {
+  margin: auto;
+  min-width: 0;
+  max-width: 1080px;
+  width: 100%;
+}
+
+div {
+  display: block;
+}
