@@ -8,17 +8,17 @@
           <!-- Primary Navbar items -->
           <router-link
             :to="{ name: 'Home' }"
-            class="py-4 px-2 text-black-500 font-bold text-left border-b-4 border-transparent"
+            class="py-4 px-2 text-black-500 font-bold text-left border-b-4 border-transparent text-gray-100"
             >Home</router-link
           >
           <router-link
             :to="{ name: 'About' }"
-            class="py-4 px-2 text-black-500 font-bold border-b-4 border-transparent"
+            class="py-4 px-2 text-black-500 font-bold border-b-4 border-transparent text-gray-200"
             >About</router-link
           >
           <router-link
             :to="{ name: 'Resume' }"
-            class="py-4 px-2 text-black-500 font-bold border-b-4 border-transparent"
+            class="py-4 px-2 text-black-500 font-bold border-b-4 border-transparent text-gray-300"
             >Resume</router-link
           >
         </div>
