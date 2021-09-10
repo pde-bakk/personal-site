@@ -19,6 +19,4 @@ RUN npm config set unsafe-perm true && \
 
 RUN npm install
 
-CMD ["tail", "-f", "/dev/null"]
-# start app
-#CMD ["npm", "run", "serve"]
+CMD ["npm", "run", "serve"]
