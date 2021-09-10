@@ -1,29 +1,27 @@
 # portfolio-site-ts
 
-## Project setup
-```
-npm install
+## Build a development website
+
+```shell
+make up
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+#### To stop or down it
+
+```shell
+make stop ||
+make down
 ```
 
-### Compiles and minifies for production
+## Build a production website
+
 ```
-npm run build
+make up PROD=1
 ```
 
-### Run your unit tests
-```
-npm run test:unit
-```
+#### To stop or down it
 
-### Lints and fixes files
+```shell
+make stop PROD=1 ||
+make down PROD=1
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.14",
+    "@vue/cli": "^4.5.13",
     "autoprefixer": "^9.8.6",
     "core-js": "^3.6.5",
     "particles.vue3": "^1.17.0",
