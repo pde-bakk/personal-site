@@ -1,4 +1,4 @@
-export const programming = [
+export const myskills = [
   {
     name: 'C',
     icon: 'c.png',

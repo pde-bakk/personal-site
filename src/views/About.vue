@@ -6,14 +6,14 @@
 import { defineComponent } from 'vue';
 
 import AppListWidget from '@/components/ListWidget.vue';
-import { programming } from '@/includes/skills';
+import { myskills } from '@/includes/skills';
 
 export default defineComponent({
   components: { AppListWidget },
   name: 'About',
   data() {
     return {
-      programming,
+      programming: myskills,
     };
   },
 });
