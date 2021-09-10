@@ -1,5 +1,7 @@
 <template>
-  <div>Coming Soon!</div>
+  <div class="text-white">
+    <h1>Coming Soon!</h1>
+  </div>
 </template>
 
 <script lang="ts">
