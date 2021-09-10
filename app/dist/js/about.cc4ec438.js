@@ -1,17 +1,20 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([
-  [ "about" ], {
-    "1ba2" : function(e, n, t) {
+  ["about"],
+  {
+    "1ba2": function (e, n, t) {
       "use strict";
       t.r(n);
-      var a = t("7a23"), c = {class : "text-white"},
-          o = Object(a["g"])("h1", null, "Coming Soon!", -1), s = [ o ];
+      var a = t("7a23"),
+        c = { class: "text-white" },
+        o = Object(a["g"])("h1", null, "Coming Soon!", -1),
+        s = [o];
       function u(e, n, t, o, u, b) {
-        return Object(a["s"])(), Object(a["f"])("div", c, s)
+        return Object(a["s"])(), Object(a["f"])("div", c, s);
       }
-      var b = Object(a["k"])({name : "Resume"});
+      var b = Object(a["k"])({ name: "Resume" });
       b.render = u;
-      n["default"] = b
-    }
-  }
+      n["default"] = b;
+    },
+  },
 ]);
 //# sourceMappingURL=about.cc4ec438.js.map
