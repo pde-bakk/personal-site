@@ -1,59 +1,41 @@
 export const particlesOptions = {
+  fpsLimit: 60,
   background: {
-    color: {
-      value: '#FFFFFF',
-    },
+    color: "#0b032d"
   },
-  fullScreen: {
-    enable: true,
+  backgroundMode: {
+    enable: true
   },
-  fpsLimit: 144,
   particles: {
     color: {
-      value: 'random',
+      value: ["#f67e7d", "#843b62", "#621940"]
     },
-
     links: {
-      color: 'random',
-      distance: 100,
-      enable: true,
-      opacity: 0.5,
-      width: 0.5,
-      warp: true,
-    },
-    collisions: {
-      enable: false,
+      color: "#ffb997",
+      enable: true
     },
     move: {
-      direction: 'none',
       enable: true,
-      outMode: 'bounce',
-      random: false,
-      speed: 1,
-      straight: false,
-    },
-    number: {
-      density: {
-        enable: true,
-        value_area: 800,
-      },
-      value: 50,
-    },
-    opacity: {
-      value: 0.7,
-    },
-    shape: {
-      type: 'circle',
-    },
-    shadow: {
-      enable: true,
-      blue: 100,
-      color: '#000000',
+      speed: 6
     },
     size: {
-      random: false,
-      value: 2,
+      value: 5,
+      random: {
+        enable: true,
+        minimumValue: 1
+      },
+      animation: {
+        enable: true,
+        speed: 2.5,
+        minimumValue: 1
+      }
     },
-  },
-  detectRetina: true,
+    opacity: {
+      value: 0.8,
+      random: {
+        enable: true,
+        minimumValue: 0.4
+      }
+    }
+  }
 };
