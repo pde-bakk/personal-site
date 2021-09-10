@@ -23,7 +23,7 @@
           >
         </div>
         <div class="flex space-x-4 items-center py-4 px-2">
-          <a href="https://www.linkedin.com/peer-de-bakker-a5b866120/">
+          <a href="https://www.linkedin.com/in/peer-de-bakker-a5b866120/">
             <i class="fab fa-linkedin"></i>
           </a>
           <a href="https://github.com/pde-bakk/">
