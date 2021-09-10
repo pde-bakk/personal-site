@@ -1,20 +1,24 @@
 # base image
-FROM node:12.2.0-alpine
+FROM node:14-alpine
 
 # set working directory
 WORKDIR /app
+
+RUN apk add bash
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
-COPY package.json /app/package.json
+COPY package*.json ./
 
 # To handle 'not get uid/gid'
-RUN npm config set unsafe-perm true
+RUN npm config set unsafe-perm true && \
+    npm install -g npm@latest && \
+    npm install @vue/cli@latest -g
 
 RUN npm install
-RUN npm install @vue/cli@3.7.0 -g
 
+CMD ["tail", "-f", "/dev/null"]
 # start app
-CMD ["npm", "run", "serve"]
+#CMD ["npm", "run", "serve"]
