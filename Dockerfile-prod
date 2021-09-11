@@ -18,6 +18,8 @@ RUN npm config set unsafe-perm true && \
     npm install @vue/cli@latest -g && \
     npm install
 
+RUN npm run build
+
 COPY . /app
 
 # production environment
