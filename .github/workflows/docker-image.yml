@@ -7,16 +7,20 @@ on:
     branches: [ master ]
 
 jobs:
-
-  build:
+  # Builds and runs the development image
+  dev:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
-      run: make up
-    - name: Build the Docker image in production
-      run: |
-        echo "NODE_ENV=production" > ./app/.env.prod
-        make up PROD=1
+    - run: make up
+
+  # Builds and runs the production image
+  prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: |
+          echo "NODE_ENV=production" > ./app/.env.prod
+          make up PROD=1
