@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/personal-site
+cd ~/personal-site || exit # if cd fails, dont run all the next commands.
 
 make stop PROD=1
 
