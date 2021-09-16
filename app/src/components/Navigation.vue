@@ -29,9 +29,9 @@
           <a href="https://github.com/pde-bakk/">
             <i class="fab fa-github-square text-white"></i>
           </a>
-          <a href="mailto:ptdebakker@gmail.com">
+          <!-- <a href="mailto:ptdebakker@gmail.com">
             <i class="fas fa-envelope-square text-white"></i>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
