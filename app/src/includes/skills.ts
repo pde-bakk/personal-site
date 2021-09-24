@@ -32,7 +32,7 @@ export const myskills = [
     name: 'Ruby',
     icon: 'ruby.png',
     description:
-        'Ruby was the first scripting language I took up, because I had friends who loved it and I can see why. I just wish it was as widely used as Python so issues would be better google-able.',
+        'Ruby was the first scripting language I took up, because I had friends who were big fans at the time and I can see why. I just wish it was as widely used as Python so issues would be better google-able.',
     links: [
       { name: 'Cloudflight coding contest', link: 'https://github.com/pde-bakk/Cloudflight-coding-contest.git' },
       { name: 'Ft_transcendence', link: 'https://github.com/pde-bakk/ft_transcendence.git' }
@@ -48,7 +48,7 @@ export const myskills = [
     name: 'Git',
     icon: 'git.png',
     description:
-        'I love Git. An absolute necessity in today\'s tech world.',
+        'I adore Git. An absolute necessity in today\'s tech world.',
     links: [
       { name: 'Github', link: 'https://github.com/pde-bakk' }
     ],
@@ -73,7 +73,7 @@ export const myskills = [
     name: 'Typescript',
     icon: 'typescript.svg',
     description:
-      'I love typescript, because it fixes all the issues I have with Javascript while keeping all the advantages.',
+      'For me, Typescript fixes all the issues I have with Javascript while keeping all the advantages.',
     links: [
       { name: 'Portfolio', link: 'https://github.com/sandraroz/portfolio' },
     ],
@@ -91,7 +91,7 @@ export const myskills = [
     name: 'Javascript',
     icon: 'javascript.png',
     description:
-      'I wouldn\'t count javascript as one of my favourite languages since I love strongly typed languages, but it\'s been great to me for front-end projects. ',
+      'I wouldn\'t count javascript as one of my favourite languages since I am a big advocate for strongly typed languages, but it\'s been great to me for front-end projects. ',
     links: [
         { name: 'Ft_transcendence', link: 'https://github.com/pde-bakk/ft_transcendence.git' },
         { name: 'Portfolio', link: 'https://github.com/pde-bakk/personal-site.git' }
