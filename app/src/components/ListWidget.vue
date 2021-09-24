@@ -2,7 +2,7 @@
   <div class="flex flex-wrap justify-center">
     <div v-for="language in programming" :key="language">
       <div class="p-3">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="max-w-xs rounded overflow-hidden shadow-lg">
           <img :src="`icons/${language.icon}`" :alt="language.name" />
           <div class="px-6 py-4 bg-white">
             <div class="font-bold text-xl mb-2">{{ language.name }}</div>
