@@ -15,3 +15,5 @@ down:
 
 stop:
 	docker-compose -f $(DOCKER_COMPOSE_FILE) stop
+
+re: down up
