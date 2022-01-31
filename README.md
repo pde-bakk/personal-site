@@ -2,28 +2,36 @@
 
 # [Click to visit!](https://www.peerdb.nl)
 
-## Build a development website
-
-```shell
-make up
-```
-
-#### To stop or down it
-
-```shell
-make stop ||
-make down
-```
-
-## Build a production website
+## Project setup
 
 ```
-make up PROD=1
+npm install
 ```
 
-#### To stop or down it
+### Compiles and hot-reloads for development
 
-```shell
-make stop PROD=1 ||
-make down PROD=1
 ```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Run your unit tests
+
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
