@@ -1,6 +1,7 @@
 # portfolio-site-ts
 
 # [Click to visit!](https://www.peerdb.nl)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58fea313-4500-4f32-ab9d-f98b9ff375e8/deploy-status)](https://app.netlify.com/sites/keen-tereshkova-1ca09e/deploys)
 
 ## Project setup
 
