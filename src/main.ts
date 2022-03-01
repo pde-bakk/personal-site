@@ -11,3 +11,4 @@ app.use(store);
 app.use(router);
 app.use(Particles);
 app.mount('#app');
+document.title = 'Peer de Bakker';
