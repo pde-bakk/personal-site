@@ -29,7 +29,7 @@ const Navbar = () => {
 				</li>
 				<li>
 					<Link to='about' smooth={true} duration={500}>
-						About
+						About me
 					</Link>
 				</li>
 				<li>
@@ -39,13 +39,18 @@ const Navbar = () => {
 				</li>
 				<li>
 					<Link to='skills' smooth={true} duration={500}>
-						Skills
+						My skills
 					</Link>
 				</li>
 				<li>
-					<Link to='contact' smooth={true} duration={500}>
-						Contact
-					</Link>
+					<a href='https://www.linkedin.com/in/peer-de-bakker-a5b866120/'>
+						<FaLinkedin size={25} />
+					</a>
+				</li>
+				<li>
+					<a href='https://github.com/pde-bakk'>
+						<FaGithub size={25} />
+					</a>
 				</li>
 			</ul>
 			{/* Hamburger */}
@@ -68,35 +73,29 @@ const Navbar = () => {
 				<li className='py-6 text-4xl'>
 					{' '}
 					<Link onClick={handleClick} to='about' smooth={true} duration={500}>
-						About
+						About me
+					</Link>
+				</li>
+				<li className='py-6 text-4xl'>
+					{' '}
+					<Link onClick={handleClick} to='portfolio' smooth={true} duration={500}>
+						Portfolio
 					</Link>
 				</li>
 				<li className='py-6 text-4xl'>
 					{' '}
 					<Link onClick={handleClick} to='skills' smooth={true} duration={500}>
-						Skills
+						My skills
 					</Link>
 				</li>
 				<li className='py-6 text-4xl'>
-					{' '}
-					<Link onClick={handleClick} to='Portfolio' smooth={true} duration={500}>
-						Portfolio
-					</Link>
-				</li>
-				<li className='py-6 text-4xl'>
-					<a
-						className='flex justify-between items-center w-full text-gray-300'
-						href='https://www.linkedin.com/in/peer-de-bakker-a5b866120/'
-					>
-						Linkedin <FaLinkedin size={30} />
+					<a href='https://www.linkedin.com/in/peer-de-bakker-a5b866120/'>
+						<FaLinkedin />
 					</a>
 				</li>
 				<li className='py-6 text-4xl'>
-					<a
-						className='flex justify-between items-center w-full text-gray-300'
-						href='https://github.com/pde-bakk'
-					>
-						Github <FaGithub size={30} />
+					<a href='https://github.com/pde-bakk'>
+						<FaGithub />
 					</a>
 				</li>
 
