@@ -20,26 +20,27 @@ const Home = () => {
 						this year I transferred to 42 Paris.
 						Majoring in Artificial Intelligence and Cybersecurity.
 					</p>
-					<div>
+					<div className="flex">
 						<Link
 							to="about"
 							smooth
 							duration={500}
 							className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
 						>
-							About Me
+							More about me
 							<span className="group-hover:rotate-90 duration-300">
 			  <HiArrowNarrowRight size={25} className="ml-3" />
 			</span>
 						</Link>
 					</div>
-				</div>
-				<div>
-					<img
-						src={peerdb_jpg}
-						alt="That's me!"
-						className="rounded-2xl mx-auto w-2/3 md:w-half"
-					/>
+
+					<div>
+						<img
+							src={peerdb_jpg}
+							alt="That's me!"
+							className="rounded-2xl mx-auto w-2/3 md:w-half"
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
