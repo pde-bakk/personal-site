@@ -10,12 +10,15 @@ const Home = () => {
 			className="h-screen w-full bg-[#0a192f]"
 		>
 			<div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+
 				<div className="flex flex-col justify-center h-full">
 					<h2 className="text-4xl sm:text-7xl font-bold text-white">
 					   Hi, I'm Peer, the Software Engineer!
 					</h2>
 					<p className="text-gray-500 py-4 max-w-md">
-						Text
+						Originally a Software Engineering student at Codam Amsterdam,
+						this year I transferred to 42 Paris.
+						Majoring in Artificial Intelligence and Cybersecurity.
 					</p>
 					<div>
 						<Link
