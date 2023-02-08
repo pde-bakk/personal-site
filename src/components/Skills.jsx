@@ -10,28 +10,28 @@ const Skills = () => {
 					<p className='py-4 text-2xl'>Here's a list of languages/technologies I work with, because why not?</p>
 				</div>
 				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
 						<p className='my-4'>C</p>
 					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					<div className='shadow-md shadow-[#FFD43B] hover:scale-110 duration-500'>
 						<p className='my-4'>Python</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<p className='my-4'>C++</p>
 					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
 						<p className='my-4'>VB.NET</p>
+					</div>
+					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
+						<p className='my-4'>Github</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<p className='my-4'>React</p>
 					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-						<p className='my-4'>Github</p>
-					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					<div className='shadow-md shadow-[#e0115f] hover:scale-110 duration-500'>
 						<p className='my-4'>Ruby</p>
 					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
 						<p className='my-4'>Assembly</p>
 					</div>
 				</div>
