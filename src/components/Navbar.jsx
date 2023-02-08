@@ -4,11 +4,7 @@ import {
 	FaTimes,
 	FaGithub,
 	FaLinkedin,
-	// FaFacebook,
-	// FaLinkedinIn,
 } from 'react-icons/fa';
-// import { HiOutlineMail } from 'react-icons/hi';
-// import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
 const Navbar = () => {
@@ -35,6 +31,11 @@ const Navbar = () => {
 				<li>
 					<Link to='portfolio' smooth={true} duration={500}>
 						Portfolio
+					</Link>
+				</li>
+				<li>
+					<Link to='codingame' smooth={true} duration={500}>
+						Codingame
 					</Link>
 				</li>
 				<li>
@@ -80,6 +81,12 @@ const Navbar = () => {
 					{' '}
 					<Link onClick={handleClick} to='portfolio' smooth={true} duration={500}>
 						Portfolio
+					</Link>
+				</li>
+				<li className='py-6 text-4xl'>
+					{' '}
+					<Link onClick={handleClick} to='codingame' smooth={true} duration={500}>
+						Codingame
 					</Link>
 				</li>
 				<li className='py-6 text-4xl'>
