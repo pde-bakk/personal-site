@@ -1,3 +1,8 @@
+# Peer's react website
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58fea313-4500-4f32-ab9d-f98b9ff375e8/deploy-status)](https://app.netlify.com/sites/keen-tereshkova-1ca09e/deploys)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,5 +73,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/58fea313-4500-4f32-ab9d-f98b9ff375e8/deploy-status)](https://app.netlify.com/sites/keen-tereshkova-1ca09e/deploys)
