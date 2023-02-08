@@ -2,6 +2,7 @@ import React from 'react';
 import code from '../assets/code2.png';
 import webserv_png from '../assets/webserv.png';
 import gomoku_png from '../assets/gomoku.png';
+import ft_transcendence_jpg from '../assets/ft_transcendence.jpg';
 
 const Portfolio = () => {
 	return (
@@ -65,7 +66,7 @@ const Portfolio = () => {
 			  <span className=' text-lg font-bold text-white tracking-wider'>
 				My own SSL
 			  </span>
-							<p className='text-center'>Rewring the MD5, SHA256, DES and RSA algorithms.</p>
+							<p className='text-center'>Rewriting the MD5, SHA256, DES and RSA algorithms.</p>
 							<div className='pt-8 text-center'>
 								<a href='https://github.com/42pde-bakk/ft_ssl.git'>
 									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
@@ -118,6 +119,31 @@ const Portfolio = () => {
 							</div>
 						</div>
 					</div>
+
+
+					<div
+						style={{ backgroundImage: `url(${ft_transcendence_jpg})` }}
+						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+					>
+						{/* Hover Effects */}
+						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+			  <span className=' text-lg font-bold text-white tracking-wider'>
+				ft_transcendence
+			  </span>
+							<p className='text-center text-sm'>
+								Our own pong tournament website, complete with guilds, matchmaking, chatrooms, friends.<br/>
+								Co-authors: Sam Kortekaas and Soufiane El Melcaoui
+							</p>
+							<div className='pt-8 text-center'>
+								<a href='https://github.com/42pde-bakk/ft_transcendence.git'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										View the code
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
 					<div
 						style={{ backgroundImage: `url(${code})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'

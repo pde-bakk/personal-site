@@ -23,7 +23,7 @@ const Skills = () => {
 						<p className='my-4'>VB.NET</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-						<p className='my-4'>REACT</p>
+						<p className='my-4'>React</p>
 					</div>
 					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
 						<p className='my-4'>Github</p>
