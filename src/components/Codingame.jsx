@@ -16,7 +16,7 @@ const Codingame = () => {
 					</p>
 					<p className='py-6 text-2xl'>
 						In 2020, when Covid first hit, our entire education went remote.
-						This was a hard ask for all of us who loved to work on Campus and
+						This was a tall order for all of us who loved to work on Campus and
 						rather struggled to motivate themselves to work from home.
 						<br/><br/>
 						It was then, that the 42 Network decided to organize a small bot programming contest
