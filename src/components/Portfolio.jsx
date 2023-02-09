@@ -194,7 +194,7 @@ const Portfolio = () => {
 									</button>
 								</a>
 								<a href='https://github.com/42pde-bakk/DSLR.git'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-m'>
 										Data Science Logistic Regression
 									</button>
 								</a>
@@ -216,7 +216,7 @@ const Portfolio = () => {
 							</p>
 							<div className='pt-8 text-center'>
 								<a href='https://github.com/42pde-bakk/woody_woodpacker.git'>
-									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-m'>
 										woody_woodpacker (coming soon)
 									</button>
 								</a>
