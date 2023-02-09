@@ -23,10 +23,10 @@ const About = () => {
 								Back in 2019, I did the piscine and it was there I wrote my first ever lines of code.
 								Since then, it's been a wild journey which has given me many new hobbies and skills.
 								<br/><br/>
-								After finishing the Common Core (read: Bachelor), I was intrigued by AI and decided to focus on that.
+								After finishing the Common Core (read: Bachelor), I was intrigued by AI and decided to make it my focus area.
 								Because I also believed that every engineer should have at least some knowledge about cybersecurity since it is becoming so important,
 								I went ahead and also dived into Binary Exploitation and Reverse Engineering.
-								That, combined with listening to many an episode of Darknet Diaries, has brought me to pursue a career therein.
+								That, combined with listening to many an episode of Darknet Diaries, has brought me to pursue a career in cybersecurity.
 							</p>
 						{/*</div>*/}
 					</div>
