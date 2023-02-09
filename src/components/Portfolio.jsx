@@ -1,14 +1,19 @@
 import React from 'react';
-import code from '../assets/code2.png';
 import webserv_png from '../assets/webserv.png';
 import gomoku_png from '../assets/gomoku.png';
 import ft_transcendence_jpg from '../assets/ft_transcendence.jpg';
 
+const kubernetes = 'https://platform9.com/wp-content/uploads/2019/12/kubernets-on-prem-diy-considerations.png';
+const cplusplus = 'https://history-computer.com/wp-content/uploads/2022/03/C-language-1200x720.jpg';
+const encryption = 'https://www.arcserve.com/sites/default/files/wp-img/encryption-keys-lock-digital-concept.jpg';
+const ghidra = 'https://cdn-media-1.freecodecamp.org/images/1*9N3SURf2cF4fISICAH7tGA.png';
+const malware = 'https://images.ctfassets.net/16nm6vz43ids/6d3XcdaQFNKn0yb1UjvLvL/3a10a9c63261ec0db4760190f341bc59/article-remove_virus_pc.png';
+const machinelearning = 'https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?format=jpg&width=960';
+
 const Portfolio = () => {
 	return (
-		<div name='portfolio' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
-			<br/><br/><br/>
-			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+		<div name='portfolio' className='w-full h-max text-gray-300 bg-[#0a192f]'>
+			<div className='mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div className='pb-8 w-full flex justify-center items-center flex-col'>
 					<p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
 						My Portfolio
@@ -40,7 +45,7 @@ const Portfolio = () => {
 						</div>
 					</div>
 					<div
-						style={{ backgroundImage: `url(${code})` }}
+						style={{ backgroundImage: `url(${cplusplus})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
@@ -59,7 +64,7 @@ const Portfolio = () => {
 						</div>
 					</div>
 					<div
-						style={{ backgroundImage: `url(${code})` }}
+						style={{ backgroundImage: `url(${encryption})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
@@ -97,7 +102,7 @@ const Portfolio = () => {
 						</div>
 					</div>
 					<div
-						style={{ backgroundImage: `url(${code})` }}
+						style={{ backgroundImage: `url(${ghidra})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
@@ -146,7 +151,7 @@ const Portfolio = () => {
 					</div>
 
 					<div
-						style={{ backgroundImage: `url(${code})` }}
+						style={{ backgroundImage: `url(${kubernetes})` }}
 						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
@@ -169,6 +174,62 @@ const Portfolio = () => {
 							</div>
 						</div>
 					</div>
+
+					<div
+						style={{ backgroundImage: `url(${machinelearning})` }}
+						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+					>
+						{/* Hover Effects */}
+						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+					  <span className=' text-lg font-bold text-white tracking-wider'>
+						Machine Learning
+					  </span>
+							<p className='text-center'>
+								A variety of projects centered around Machine Learning.
+							</p>
+							<div className='pt-8 text-center'>
+								<a href='https://github.com/42pde-bakk/ml_modules.git'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										ML modules
+									</button>
+								</a>
+								<a href='https://github.com/42pde-bakk/DSLR.git'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										Data Science Logistic Regression
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div
+						style={{ backgroundImage: `url(${malware})` }}
+						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+					>
+						{/* Hover Effects */}
+						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
+			  <span className=' text-lg font-bold text-white tracking-wider'>
+				Our own computer virus
+			  </span>
+							<p className='text-center'>
+								Together with Louisa Malki Haegel, I am currently working on the Virus branch of 42.
+							</p>
+							<div className='pt-8 text-center'>
+								<a href='https://github.com/42pde-bakk/woody_woodpacker.git'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										woody_woodpacker (coming soon)
+									</button>
+								</a>
+								<a href='https://github.com/42pde-bakk/dr_quine.git'>
+									<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+										Dr-Quine
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
 			</div>
 		</div>
