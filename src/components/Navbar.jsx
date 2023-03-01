@@ -5,8 +5,8 @@ import {
 	FaGithub,
 	FaLinkedin,
 } from 'react-icons/fa';
-// import {Link} from 'react-router-dom';
-import { Link } from 'react-scroll';
+import {Link} from 'react-router-dom';
+// import { Link } from 'react-scroll';
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
@@ -40,6 +40,11 @@ const Navbar = () => {
 					<li>
 						<Link to='codingame' smooth={true} duration={500}>
 							Codingame
+						</Link>
+					</li>
+					<li>
+						<Link to='work' smooth={true} duration={500}>
+							Work
 						</Link>
 					</li>
 					<li>
@@ -94,6 +99,12 @@ const Navbar = () => {
 						{' '}
 						<Link onClick={handleClick} to='codingame' smooth={true} duration={500}>
 							Codingame
+						</Link>
+					</li>
+					<li className='py-6 text-4xl'>
+						{' '}
+						<Link onClick={handleClick} to='work' smooth={true} duration={500}>
+							Work
 						</Link>
 					</li>
 					<li className='py-6 text-4xl'>

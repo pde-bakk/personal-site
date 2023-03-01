@@ -1,13 +1,14 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import peerdb_jpg from '../assets/peerdb.jpg';
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
+import {Link} from 'react-router-dom';
 
 const Home = () => {
 	return (
 		<div
 			name="home"
-			className="h-screen w-full bg-[#0a192f]"
+			className="h-full w-full bg-[#0a192f]"
 		>
 			<div className="max-w-screen-lg pt-80 mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
 
