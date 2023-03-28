@@ -34,6 +34,14 @@ const Work = () => {
 						Since 2016 I've been working at Amsterdam at Home makelaars, a small family-owned real-estate agency
 						in Amsterdam. In the beginning, mostly working the phone, scheduling appointments for our clients,
 						but now in charge of the reports on the Amsterdam housing market that we produce in-house.
+
+						The reports the NVM was making were too bland, too boring and so we figured we could do better.
+						Our reports allow you to segment the market by neighbourhood, size of the appartment and whether
+						it was built before World War II.
+
+						These reports were and still are our proof that we know the market inside and out,
+						and that we are continuously doing our homework on the latest trends.
+
 					</p>
 					<p className='className="bg-gray-300 hover:bg-gray-400 text-gray-100 font-bold py-2 px-4 rounded-l'>
 						<a href={'https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/'}>
