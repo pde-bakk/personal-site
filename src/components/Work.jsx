@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // import { Document, Page } from 'react-pdf';
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import pdf_file from "./Kwartaalrapport_aah.pdf"
+import pdf_file from "./Kwartaalrapport_aah.pdf";
 
 const Work = () => {
   const PDF_NAME = pdf_file;
