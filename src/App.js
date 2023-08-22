@@ -22,6 +22,7 @@ function App() {
 				<Route path="/codingame" element={<Codingame />} />
 				<Route path="/work" element={<Work />} />
 				<Route path="/skills" element={<Skills />} />
+				<Route path="/*" element={<Home />} />
 			</Routes>
 		</div>
 	)
