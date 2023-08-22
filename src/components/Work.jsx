@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+// import { Document, Page } from 'react-pdf';
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack5';
 import "react-pdf/dist/esm/Page/TextLayer.css";
 
 
 const Work = () => {
-	const PDF_NAME = 'Amsterdam_binnen_de_ring-Kwartaalrapport_2022Q4.pdf'
+	const PDF_NAME = 'Kwartaalrapport_aah.pdf'
 	// const [file, setFile] = useState(PDF_NAME);
 	const [numPages, setNumPages] = useState(null);
 	const [pageNumber, setPageNumber] = useState(1);
