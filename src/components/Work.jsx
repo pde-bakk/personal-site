@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-// import { Document, Page } from 'react-pdf';
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack5";
+import { Document, Page, pdfjs } from 'react-pdf';
+// import { Document, Page, pdfjs } from "react-pdf/dist/esm/entry.webpack5";
 import "react-pdf/dist/esm/Page/TextLayer.css";
-import pdf_file from "./Kwartaalrapport_aah.pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 const Work = () => {
-  const PDF_NAME = pdf_file;
   // const [file, setFile] = useState(PDF_NAME);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
@@ -65,7 +64,7 @@ const Work = () => {
             {/*</p>*/}
 
             <Document
-              file={PDF_NAME}
+              file="/Kwartaalrapport_aah.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
               onItemClick={
                 "https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"
