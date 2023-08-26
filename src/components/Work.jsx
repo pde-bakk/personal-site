@@ -3,7 +3,14 @@ import "react-html5video/dist/styles.css";
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
+import ReactGA from "react-ga4";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+ReactGA.send({
+  hitType: "pageview",
+  page: "/work",
+  title: "Work",
+});
 
 const Work = () => {
   // const [file, setFile] = useState(PDF_NAME);
@@ -71,10 +78,7 @@ const Work = () => {
                 "https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"
               }
             >
-              <Page
-                  pageNumber={pageNumber}
-                  renderAnnotationLayer={false}
-              />
+              <Page pageNumber={pageNumber} renderAnnotationLayer={false} />
             </Document>
           </div>
         </div>
@@ -84,27 +88,37 @@ const Work = () => {
             Panartis
           </p>
           <p className="py-6 text-2xl">
-            In 2021 I finished the Codam core curriculum and it was time for my first internship.
-            I started working at Panartis, a The Hague based art company whose goal it was to unify art collections and databases
-            to make it easier and more efficient for scientists to do their research.
-            I was one of the back-end developers there, although I also maintained the DevOps side until we started working with third party contractors
-            and switched to Azure.
-            When my 6 month internship finished, I signed on to continue 3 days per week and spend the rest of my time and energy on my education.
-            I've learnt a ton here, both in my profession and in the workings of startups/scale-ups.
-            I loved working here, but I noticed that working 3 days, and going to school 3 days was catching up to me.
-            Therefore I decided to quit my job and fully focus on Codam.
+            In 2021 I finished the Codam core curriculum and it was time for my
+            first internship. I started working at Panartis, a The Hague based
+            art company whose goal it was to unify art collections and databases
+            to make it easier and more efficient for scientists to do their
+            research. I was one of the back-end developers there, although I
+            also maintained the DevOps side until we started working with third
+            party contractors and switched to Azure. When my 6 month internship
+            finished, I signed on to continue 3 days per week and spend the rest
+            of my time and energy on my education. I've learnt a ton here, both
+            in my profession and in the workings of startups/scale-ups. I loved
+            working here, but I noticed that working 3 days, and going to school
+            3 days was catching up to me. Therefore I decided to quit my job and
+            fully focus on Codam.
           </p>
           <p className='className="bg-gray-300 rounded-l py-2 px-4 font-bold text-gray-100 hover:bg-gray-400'>
-            <Video autoPlay loop muted
-                   controls={['PlayPause', 'Seek', 'Time', 'Volume', 'Fullscreen']}
-                   onCanPlayThrough={() => {
-                     // Do stuff
-                   }}>
-              <source src="https://cdn.panartis.world/public/panartis_cloud_h264.mp4" type="video/mp4" />
+            <Video
+              autoPlay
+              loop
+              muted
+              controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
+              onCanPlayThrough={() => {
+                // Do stuff
+              }}
+            >
+              <source
+                src="https://cdn.panartis.world/public/panartis_cloud_h264.mp4"
+                type="video/mp4"
+              />
             </Video>
           </p>
         </div>
-
       </div>
     </div>
   );
