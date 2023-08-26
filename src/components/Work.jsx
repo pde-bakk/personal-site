@@ -3,7 +3,14 @@ import "react-html5video/dist/styles.css";
 import React, { useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
+import ReactGA from "react-ga4";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
+ReactGA.send({
+  hitType: "pageview",
+  page: "/work",
+  title: "Work"
+});
 
 const Work = () => {
   // const [file, setFile] = useState(PDF_NAME);
