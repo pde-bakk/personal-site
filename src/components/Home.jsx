@@ -3,6 +3,14 @@ import { HiArrowNarrowRight } from 'react-icons/hi';
 import peerdb_jpg from '../assets/peerdb.jpg';
 // import { Link } from "react-scroll";
 import {Link} from 'react-router-dom';
+import ReactGA from "react-ga4";
+
+
+ReactGA.send({
+	hitType: "pageview",
+	page: "/home",
+	title: "Home"
+});
 
 const Home = () => {
 	return (
