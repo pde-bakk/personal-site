@@ -16,21 +16,22 @@ import Work from "./components/Work";
 ReactGA.initialize("G-XC2GF6ZMKT");
 
 function App() {
-	return (
-		<div>
-			<Navbar/>
-			<Routes>
-				<Route path="/" element={<Home/>}/>
-				<Route path="/home" element={<Home/>}/>
-				<Route path="/about" element={<About/>}/>
-				<Route path="/portfolio" element={<Portfolio/>}/>
-				<Route path="/codingame" element={<Codingame/>}/>
-				<Route path="/work" element={<Work/>}/>
-				<Route path="/skills" element={<Skills/>}/>
-				<Route path="/*" element={<Home/>}/>
-			</Routes>
-		</div>
-	);
+  return (
+      <div><Navbar /><Routes>
+      <Route path = "/" element = { <Home/> } />
+				<Route path="/home
+                                               " element={<Home/>}/>
+                                  < Route path = "/about" element =
+       { <About/> } />
+				<Route path="/portfolio " element={<Portfolio/>}/>
+       < Route path = "/codingame" element =
+       { <Codingame/> } />
+				<Route path="/work " element={<Work/>}/>
+       < Route path = "/skills" element = { <Skills/> } />
+				<Route path="/ *
+                                              " element={<Home/>}/>
+                                          < /Routes>
+		</div>);
 }
 
 export default App;
