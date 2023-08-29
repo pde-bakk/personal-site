@@ -47,7 +47,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="www.linkedin.com/in/peer-de-bakker">
+            <a href="https://www.linkedin.com/in/peer-de-bakker">
               <FaLinkedin size={25} />
             </a>
           </li>
