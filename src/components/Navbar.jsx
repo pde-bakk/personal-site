@@ -47,7 +47,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/peer-de-bakker-a5b866120/">
+            <a href="www.linkedin.com/in/peer-de-bakker">
               <FaLinkedin size={25} />
             </a>
           </li>
@@ -116,7 +116,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <a href="https://www.linkedin.com/in/peer-de-bakker-a5b866120/">
+            <a href="https://www.linkedin.com/in/peer-de-bakker">
               <FaLinkedin />
             </a>
           </li>
