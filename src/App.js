@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Skills from "./components/Skills";
 import Work from "./components/Work";
+import Footer from "./components/Footer";
 
 // https://blog.webdevsimplified.com/2022-07/react-router/
 
@@ -29,6 +30,7 @@ function App() {
 				<Route path="/skills" element={<Skills/>}/>
 				<Route path="/*" element={<Home/>}/>
 			</Routes>
+			<Footer/>
 		</div>
 	);
 }
