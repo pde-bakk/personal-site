@@ -1,0 +1,6 @@
+
+# https://github.com/restyled-io/restyled.io/wiki/Configuring-Restyled
+
+restylers:
+  - clang-format:
+      enabled: false
