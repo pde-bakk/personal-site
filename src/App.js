@@ -13,7 +13,6 @@ import Work from "./components/Work";
 import Footer from "./components/Footer";
 
 // https://blog.webdevsimplified.com/2022-07/react-router/
-
 ReactGA.initialize("G-XC2GF6ZMKT");
 
 function App() {
