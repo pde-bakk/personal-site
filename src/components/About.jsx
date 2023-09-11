@@ -1,6 +1,8 @@
 import React from "react";
+import useTitle from "./UseTitle";
 
 const About = () => {
+	useTitle("About Peer de Bakker");
 	return (
 		<div
 			name="about"

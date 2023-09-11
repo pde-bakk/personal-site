@@ -5,8 +5,10 @@ import NatureSpirit from '../assets/NatureSpirit.jpg';
 import ZeldaWitches from '../assets/ZeldaWitches.jpg';
 import Pacman from '../assets/Pacman.jpg';
 import FantasticBits from '../assets/FantasticBits.jpg';
+import useTitle from "./UseTitle";
 
 const Codingame = () => {
+	useTitle("Peer de Bakker on Codingame");
 	return (
 		<div name='codingame' className='w-full text-gray-300 bg-background_colour'>
 			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>

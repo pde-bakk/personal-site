@@ -1,6 +1,8 @@
 import React from 'react';
+import useTitle from "./UseTitle";
 
 const Skills = () => {
+	useTitle("My 'skills'")
 	return (
 		<div name='skills' className='w-full h-screen bg-background_colour text-gray-300'>
 			{/* Container */}

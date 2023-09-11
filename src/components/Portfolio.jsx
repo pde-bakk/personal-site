@@ -2,6 +2,7 @@ import React from 'react';
 import webserv_png from '../assets/webserv.png';
 import gomoku_png from '../assets/gomoku.png';
 import ft_transcendence_jpg from '../assets/ft_transcendence.jpg';
+import useTitle from "./UseTitle";
 
 const kubernetes = 'https://platform9.com/wp-content/uploads/2019/12/kubernets-on-prem-diy-considerations.png';
 const cplusplus = 'https://history-computer.com/wp-content/uploads/2022/03/C-language-1200x720.jpg';
@@ -11,6 +12,7 @@ const malware = 'https://images.ctfassets.net/16nm6vz43ids/6d3XcdaQFNKn0yb1UjvLv
 const machinelearning = 'https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?format=jpg&width=960';
 
 const Portfolio = () => {
+	useTitle("Peer de Bakker's portfolio");
 	return (
 		<div name='portfolio' className='w-full h-max text-gray-300 bg-background_colour'>
 			<div className='mx-auto p-4 flex flex-col justify-center w-full h-full'>
