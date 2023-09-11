@@ -14,7 +14,7 @@ import Work from "./components/Work";
 
 // https://blog.webdevsimplified.com/2022-07/react-router/
 
-ReactGA.initialize(process.env.GA_MEASUREMENT_ID);
+ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
 
 function App() {
   return (
