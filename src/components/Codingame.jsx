@@ -8,7 +8,7 @@ import FantasticBits from '../assets/FantasticBits.jpg';
 
 const Codingame = () => {
 	return (
-		<div name='codingame' className='w-full text-gray-300 bg-[#0a192f]'>
+		<div name='codingame' className='w-full text-gray-300 bg-background_colour'>
 			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div className='pb-8 w-full flex justify-center items-center flex-col'>
 					<p className='text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500'>
@@ -56,7 +56,7 @@ const Codingame = () => {
 					<a target="_blank" rel="noopener noreferrer" href='https://www.codingame.com/contests/fall-challenge-2022'>
 					<div
 						style={{backgroundImage: `url(${KeepOffTheGrass})`}}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+						className='shadow-lg shadow-white group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
@@ -84,7 +84,7 @@ const Codingame = () => {
 					{/* Spring Challenge 2022 */}
 					<div
 						style={{backgroundImage: `url(${SpiderAttack})`}}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+						className='shadow-lg shadow-almost_black group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
@@ -109,7 +109,7 @@ const Codingame = () => {
 					{/* Spring Challenge 2021 */}
 					<div
 						style={{backgroundImage: `url(${NatureSpirit})`}}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+						className='shadow-lg shadow-white group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
@@ -134,7 +134,7 @@ const Codingame = () => {
 					{/* Fall Challenge 2020 */}
 					<div
 						style={{backgroundImage: `url(${ZeldaWitches})`}}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+						className='shadow-lg shadow-almost_black group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
@@ -160,7 +160,7 @@ const Codingame = () => {
 					{/* Spring Challenge 2020 */}
 					<div
 						style={{backgroundImage: `url(${Pacman})`}}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+						className='shadow-lg shadow-white group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
@@ -186,7 +186,7 @@ const Codingame = () => {
 					{/* 42Network challenge */}
 					<div
 						style={{backgroundImage: `url(${FantasticBits})`}}
-						className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
+						className='shadow-lg shadow-almost_black group container rounded-md flex justify-center items-center mx-auto content-div'
 					>
 						{/* Hover Effects */}
 						<div className='opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col'>
