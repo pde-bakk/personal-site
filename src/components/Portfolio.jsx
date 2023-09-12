@@ -1,15 +1,7 @@
 import React from 'react';
-import webserv_png from '../assets/webserv.png';
-import gomoku_png from '../assets/gomoku.png';
-import ft_transcendence_jpg from '../assets/ft_transcendence.jpg';
+import {webserv_png, gomoku_png, ft_transcendence_jpg} from "../assets/Projects";
+import {kubernetes, cplusplus, encryption, ghidra, malware, machinelearning} from "../assets/Skills";
 import useTitle from "./UseTitle";
-
-const kubernetes = 'https://platform9.com/wp-content/uploads/2019/12/kubernets-on-prem-diy-considerations.png';
-const cplusplus = 'https://history-computer.com/wp-content/uploads/2022/03/C-language-1200x720.jpg';
-const encryption = 'https://www.arcserve.com/sites/default/files/wp-img/encryption-keys-lock-digital-concept.jpg';
-const ghidra = 'https://cdn-media-1.freecodecamp.org/images/1*9N3SURf2cF4fISICAH7tGA.png';
-const malware = 'https://images.ctfassets.net/16nm6vz43ids/6d3XcdaQFNKn0yb1UjvLvL/3a10a9c63261ec0db4760190f341bc59/article-remove_virus_pc.png';
-const machinelearning = 'https://imageio.forbes.com/specials-images/dam/imageserve/966248982/960x0.jpg?format=jpg&width=960';
 
 const Portfolio = () => {
 	useTitle("Peer de Bakker's portfolio");

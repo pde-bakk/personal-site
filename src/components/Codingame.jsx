@@ -1,10 +1,5 @@
 import React from 'react';
-import KeepOffTheGrass from '../assets/KeepOffTheGrass.jpg';
-import SpiderAttack from '../assets/SpiderAttack.jpg';
-import NatureSpirit from '../assets/NatureSpirit.jpg';
-import ZeldaWitches from '../assets/ZeldaWitches.jpg';
-import Pacman from '../assets/Pacman.jpg';
-import FantasticBits from '../assets/FantasticBits.jpg';
+import {KeepOffTheGrass, SpiderAttack, NatureSpirit, ZeldaWitches, Pacman, FantasticBits} from '../assets/Codingame';
 import useTitle from "./UseTitle";
 
 const Codingame = () => {
