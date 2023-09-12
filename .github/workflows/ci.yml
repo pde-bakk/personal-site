@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "master" ]
   pull_request:
-    branches: [ "master" ]
+#    branches: [ "master" ]  # Commented out, so it runs on every single pull request
 
 jobs:
   build:
