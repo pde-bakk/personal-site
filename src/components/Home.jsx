@@ -20,10 +20,10 @@ const Home = () => {
             Hi, I'm Peer, the Software Engineer!
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            My name is Peer de Bakker,
-            originally a Software Engineering student at Codam Amsterdam,
-            last year I transferred to 42 Paris to major in Artificial Intelligence and Cyber Security.
-            Now looking to set the next step in the working world of Cyber.
+            My name is Peer de Bakker, originally a Software Engineering student
+            at Codam Amsterdam, last year I transferred to 42 Paris to major in
+            Artificial Intelligence and Cyber Security. Now looking to set the
+            next step in the working world of Cyber.
           </p>
           <div className="flex">
             <Link
