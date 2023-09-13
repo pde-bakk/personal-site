@@ -1,4 +1,4 @@
-# peerdb.nl
+# Personal website for Peer de Bakker
 
 This repository contains the source code for my personal website [peerdb.nl](https://peerdb.nl).
 
@@ -6,8 +6,8 @@ I use netlify to host it:
 <br>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/58fea313-4500-4f32-ab9d-f98b9ff375e8/deploy-status)](https://app.netlify.com/sites/keen-tereshkova-1ca09e/deploys)
 
+---
 
-----
 ## Setup and configuration:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -47,12 +47,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/peer-de-bakker">
+            <a
+              href="https://www.linkedin.com/in/peer-de-bakker"
+              aria-label={"LinkedIn"}
+            >
               <FaLinkedin size={25} />
             </a>
           </li>
           <li>
-            <a href="https://github.com/pde-bakk">
+            <a href="https://github.com/pde-bakk" aria-label={"GitHub"}>
               <FaGithub size={25} />
             </a>
           </li>
@@ -70,13 +73,23 @@ const Navbar = () => {
           }
         >
           <li className="py-6 text-4xl">
-            <Link onClick={handleClick} to="home" smooth={"true"} duration={500}>
+            <Link
+              onClick={handleClick}
+              to="home"
+              smooth={"true"}
+              duration={500}
+            >
               Home
             </Link>
           </li>
           <li className="py-6 text-4xl">
             {" "}
-            <Link onClick={handleClick} to="about" smooth={"true"} duration={500}>
+            <Link
+              onClick={handleClick}
+              to="about"
+              smooth={"true"}
+              duration={500}
+            >
               About me
             </Link>
           </li>
@@ -100,7 +113,12 @@ const Navbar = () => {
           </li>
           <li className="py-6 text-4xl">
             {" "}
-            <Link onClick={handleClick} to="work" smooth={"true"} duration={500}>
+            <Link
+              onClick={handleClick}
+              to="work"
+              smooth={"true"}
+              duration={500}
+            >
               Work
             </Link>
           </li>
@@ -116,12 +134,15 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="py-6 text-4xl">
-            <a href="https://www.linkedin.com/in/peer-de-bakker">
+            <a
+              href="https://www.linkedin.com/in/peer-de-bakker"
+              aria-label={"LinkedIn"}
+            >
               <FaLinkedin />
             </a>
           </li>
           <li className="py-6 text-4xl">
-            <a href="https://github.com/pde-bakk">
+            <a href="https://github.com/pde-bakk" aria-label={"GitHub"}>
               <FaGithub />
             </a>
           </li>
