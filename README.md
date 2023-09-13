@@ -1,4 +1,4 @@
-# peerdb.nl
+# Personal website for Peer de Bakker
 
 This repository contains the source code for my personal website [peerdb.nl](https://peerdb.nl).
 
