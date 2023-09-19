@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 // import { Link } from 'react-scroll';
+import { useTranslation } from "react-i18next";
+import languageDropdown from "./languageDropdown";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+
+  const [t ] = useTranslation();
 
   return (
     <div className="w-full flex justify-between items-center px-4 bg-background_colour text-gray-300">
@@ -18,33 +22,36 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-x-8">
           <li>
             <Link to="home" smooth={"true"} duration={500}>
-              Home
+              {t("home", {ns: "navigation"})}
             </Link>
           </li>
           <li>
             <Link to="about" smooth={"true"} duration={500}>
-              About me
+              {t("about me", {ns: "navigation"})}
             </Link>
           </li>
           <li>
             <Link to="portfolio" smooth={"true"} duration={500}>
-              Portfolio
+              {t("portfolio", {ns: "navigation"})}
             </Link>
           </li>
           <li>
             <Link to="codingame" smooth={"true"} duration={500}>
-              Codingame
+              {t("codingame", {ns: "navigation"})}
             </Link>
           </li>
           <li>
             <Link to="work" smooth={"true"} duration={500}>
-              Work
+              {t("work", {ns: "navigation"})}
             </Link>
           </li>
           <li>
             <Link to="skills" smooth={"true"} duration={500}>
-              My skills
+              {t("skills", {ns: "navigation"})}
             </Link>
+          </li>
+          <li>
+            {languageDropdown()}
           </li>
           <li>
             <a
@@ -79,7 +86,7 @@ const Navbar = () => {
               smooth={"true"}
               duration={500}
             >
-              Home
+              {t("home", {ns: "navigation"})}
             </Link>
           </li>
           <li className="py-6 text-4xl">
@@ -90,15 +97,20 @@ const Navbar = () => {
               smooth={"true"}
               duration={500}
             >
-              About me
+              {t("about me", {ns: "navigation"})}
             </Link>
           </li>
           <li className="py-6 text-4xl">
             {" "}
-            <Link to="/portfolio">Portfolio</Link>
-            {/*<Link onClick={handleClick} to='portfolio' smooth={true} duration={500}>*/}
-            {/*	Portfolio*/}
-            {/*</Link>*/}
+            <Link
+                onClick={handleClick}
+                to="portfolio"
+                smooth={"true"}
+                duration={500}
+            >
+              {t("portfolio", {ns: "navigation"})}
+            </Link>
+            {/*<Link to="/portfolio">Portfolio</Link>*/}
           </li>
           <li className="py-6 text-4xl">
             {" "}
@@ -108,7 +120,7 @@ const Navbar = () => {
               smooth={"true"}
               duration={500}
             >
-              Codingame
+              {t("codingame", {ns: "navigation"})}
             </Link>
           </li>
           <li className="py-6 text-4xl">
@@ -119,7 +131,7 @@ const Navbar = () => {
               smooth={"true"}
               duration={500}
             >
-              Work
+              {t("work", {ns: "navigation"})}
             </Link>
           </li>
           <li className="py-6 text-4xl">
@@ -130,7 +142,7 @@ const Navbar = () => {
               smooth={"true"}
               duration={500}
             >
-              My skills
+              {t("skills", {ns: "navigation"})}
             </Link>
           </li>
           <li className="py-6 text-4xl">
