@@ -122,9 +122,7 @@ const Codingame = () => {
               <span className="text-center text-lg font-bold text-white tracking-wider">
                 Nature Spirit
               </span>
-              <p className="text-center">
-                {t("nature-spirit.p1")}
-              </p>
+              <p className="text-center">{t("nature-spirit.p1")}</p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
@@ -145,9 +143,7 @@ const Codingame = () => {
               <span className="text-center text-lg font-bold text-white tracking-wider">
                 Zelda Witches
               </span>
-              <p className="text-center">
-                {t("zelda-witches.p1")}
-              </p>
+              <p className="text-center">{t("zelda-witches.p1")}</p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
@@ -170,9 +166,7 @@ const Codingame = () => {
                 {/*Pacman with a<br />*/}
                 {/*Rock Paper Scissors twist*/}
               </span>
-              <p className="text-center">
-                {t("pacman.p1")}
-              </p>
+              <p className="text-center">{t("pacman.p1")}</p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
@@ -195,9 +189,7 @@ const Codingame = () => {
                 <br />
                 42Network Edition
               </span>
-              <p className="text-center">
-                {t("fantastic-bits.p1")}
-              </p>
+              <p className="text-center">{t("fantastic-bits.p1")}</p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
