@@ -38,7 +38,7 @@ const Codingame = () => {
             {t("text.p6")}
             <br />
             <br />
-            codingame
+            {t("text.p7")}
           </p>
           <p className="py-6 text-l">
             <a
