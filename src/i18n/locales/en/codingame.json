@@ -1,0 +1,42 @@
+{
+  "title": "Peer de Bakker on Codingame",
+  "p-title": "My Codingame resume",
+  "text": {
+    "p1": "In 2020, when Covid first hit, our entire education went remote. This was a tall order for all of us who loved to work on Campus and rather struggled to motivate themselves to work from home.",
+    "p2": "It was then, that the 42 Network decided to organize a small bot programming contest just for us. My friends and I loved it and put all our time in this.",
+    "p3": "This contest was hosted on codingame.com who just so happen to organize these kinds of contests globally, twice a year. Since then, I have never missed an edition. I'm always looking forward to these challenges for months, and when they are over I feel a bit empty inside.",
+    "p4": "Aside from just being tons of fun, this has helped me discover new interests in the tech field. And for that, Codingame, I thank you.",
+    "p5": "They also offer a few other game-modes I'm enthralled with: Code golfing and Clash of Code. Clash of Code is a 15 minute game, where everyone gets the same exercise and has to solve it as fast as possible.",
+    "p6": "Code golfing is writing a solution to the problem in as few characters of code as possible.",
+    "p7": "Both of these game-modes I sucked at. I had friends who loved them, and reluctantly I gave them a try. And because I was pretty bad at them, I decided to grind it and now I'm top 100 in Clash of Code."
+  },
+  "profile-title": "My Codingame profile",
+  "keep-off-the-grass": {
+    "title": "Keep Off The Grass",
+    "p1": "I ranked 56th out of 4557 participants and helped 42Paris secure #1!",
+    "p2": "I spent so many nights together with Victor Francal at 42 for  this one. It was a great Christmas period!",
+    "p3": "Also, shoutout to Auguste Faure and Adrian Weaver!"
+  },
+  "spider-attack": {
+    "title": "Spider Attack",
+    "p1": "I finished 255th out of 7695 participants, 3 spots in front of Harm Smits.",
+    "p2": "Helped bring Codam to 7th on the Schools ranking."
+  },
+  "nature-spirit": {
+    "title": "Nature Spirit",
+    "p1": "I finished 309th out of 6867 participants, just shy of Legend league. Helped bring Codam to 9th on the Schools ranking."
+  },
+  "zelda-witches": {
+    "title": "Zelda Witches",
+    "p1": "I finished 424th out of 7011 participants. On the last night, me and Aristotelis Bobas stayed up most of the night hotfixing in order to enter (succesfully) enter Gold League."
+  },
+  "pacman": {
+    "title": "Pacman with a Rock-Paper-Scissors twist",
+    "p1": "Finished 234th out of 4955 participants, one spot below Stan Verschuuren. On the very last day, I jumped ship to 42Paris to help them secure a top 3 ranking."
+  },
+  "fantastic-bits": {
+    "title": "Fantastic Bits - 42Network Edition",
+    "p1": "I finished 70th out of 358 participants. Not bad for a first timer who only learned how to code half a year prior, huh?"
+  },
+  "challenge": "challenge"
+}
