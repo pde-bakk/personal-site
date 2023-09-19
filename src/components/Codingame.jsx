@@ -12,33 +12,33 @@ import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
 const Codingame = () => {
-  const [t ] = useTranslation();
-  useTitle( t("title", {ns: "codingame"} ));
-  console.log(`current language = ${i18n.language}`)
-  console.log(t("title", {ns: "codingame"} ))
+  const [t] = useTranslation();
+  useTitle(t("title", { ns: "codingame" }));
+  console.log(`current language = ${i18n.language}`);
+  console.log(t("title", { ns: "codingame" }));
   return (
     <div name="codingame" className="w-full text-gray-300 bg-background_colour">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8 w-full flex justify-center items-center flex-col">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500">
-            {t("p-title", {ns: "codingame"} )}
+            {t("p-title", { ns: "codingame" })}
           </p>
           <p className="py-6 text-2xl">
-            {t("text.p1", {ns: "codingame"} )}
+            {t("text.p1", { ns: "codingame" })}
             <br />
             <br />
-            {t("text.p2", {ns: "codingame"} )}
+            {t("text.p2", { ns: "codingame" })}
             <br />
             <br />
-            {t("text.p3", {ns: "codingame"} )}
+            {t("text.p3", { ns: "codingame" })}
             <br />
             <br />
-            {t("text.p4", {ns: "codingame"} )}
+            {t("text.p4", { ns: "codingame" })}
             <br />
             <br />
-            {t("text.p5", {ns: "codingame"} )}
+            {t("text.p5", { ns: "codingame" })}
             <br />
-            {t("text.p6", {ns: "codingame"} )}
+            {t("text.p6", { ns: "codingame" })}
             <br />
             <br />
             codingame
@@ -49,7 +49,7 @@ const Codingame = () => {
                 "https://www.codingame.com/profile/c6d6426a60c45cad19b5c716e713d17a6669273"
               }
             >
-              {t("profile-title", {ns: "codingame"} )}
+              {t("profile-title", { ns: "codingame" })}
             </a>
           </p>
         </div>
@@ -72,11 +72,11 @@ const Codingame = () => {
                   Keep Off The Grass
                 </span>
                 <p className="text-center">
-                  {t("keep-off-the-grass.p1", {ns: "codingame"} )} 🏆
-                  <br/>
-                  {t("keep-off-the-grass.p2", {ns: "codingame"} )}
+                  {t("keep-off-the-grass.p1", { ns: "codingame" })} 🏆
                   <br />
-                  {t("keep-off-the-grass.p3", {ns: "codingame"} )}
+                  {t("keep-off-the-grass.p2", { ns: "codingame" })}
+                  <br />
+                  {t("keep-off-the-grass.p3", { ns: "codingame" })}
                 </p>
                 {/*<div className='pt-8 text-center'>*/}
                 {/*	<a href='https://www.codingame.com/contests/fall-challenge-2022'>*/}
@@ -101,14 +101,14 @@ const Codingame = () => {
                 Spider Attack
               </span>
               <p className="text-center">
-                {t("spider-attack.p1", {ns: "codingame"} )}
+                {t("spider-attack.p1", { ns: "codingame" })}
                 🤪
-                {t("spider-attack.p2", {ns: "codingame"} )}
+                {t("spider-attack.p2", { ns: "codingame" })}
               </p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2022">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
-                    {t("challenge", {ns: "codingame"} )}
+                    {t("challenge", { ns: "codingame" })}
                   </button>
                 </a>
               </div>
@@ -126,12 +126,12 @@ const Codingame = () => {
                 Nature Spirit
               </span>
               <p className="text-center">
-                {t("nature-spirit.p1", {ns: "codingame"} )}
+                {t("nature-spirit.p1", { ns: "codingame" })}
               </p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
-                    {t("challenge", {ns: "codingame"} )}
+                    {t("challenge", { ns: "codingame" })}
                   </button>
                 </a>
               </div>
@@ -149,12 +149,12 @@ const Codingame = () => {
                 Zelda Witches
               </span>
               <p className="text-center">
-                {t("zelda-witches.p1", {ns: "codingame"} )}
+                {t("zelda-witches.p1", { ns: "codingame" })}
               </p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
-                    {t("challenge", {ns: "codingame"} )}
+                    {t("challenge", { ns: "codingame" })}
                   </button>
                 </a>
               </div>
@@ -169,17 +169,17 @@ const Codingame = () => {
             {/* Hover Effects */}
             <div className="opacity-0 group-hover:opacity-100 flex justify-center items-center flex-col">
               <span className="text-center text-lg font-bold text-white tracking-wider">
-                {t("pacman.title", {ns: "codingame"} )}
+                {t("pacman.title", { ns: "codingame" })}
                 {/*Pacman with a<br />*/}
                 {/*Rock Paper Scissors twist*/}
               </span>
               <p className="text-center">
-                {t("pacman.p1", {ns: "codingame"} )}
+                {t("pacman.p1", { ns: "codingame" })}
               </p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
-                    {t("challenge", {ns: "codingame"} )}
+                    {t("challenge", { ns: "codingame" })}
                   </button>
                 </a>
               </div>
@@ -199,12 +199,12 @@ const Codingame = () => {
                 42Network Edition
               </span>
               <p className="text-center">
-                {t("fantastic-bits.p1", {ns: "codingame"} )}
+                {t("fantastic-bits.p1", { ns: "codingame" })}
               </p>
               <div className="pt-8 text-center">
                 <a href="https://www.codingame.com/contests/spring-challenge-2021">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-base">
-                    {t("challenge", {ns: "codingame"} )}
+                    {t("challenge", { ns: "codingame" })}
                   </button>
                 </a>
               </div>
