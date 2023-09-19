@@ -8,7 +8,7 @@ i18n
 	.use(initReactI18next)
 	.init({
 	fallbackLng: 'en',
-	lng: 'zh', // if you're using a language detector, do not define the lng option
+	lng: 'en', // if you're using a language detector, do not define the lng option
 	resources: {
 		en: {
 			navigation: require('./locales/en/navigation.json'),
@@ -16,11 +16,11 @@ i18n
 		},
 		nl: {
 			navigation: require('./locales/nl/navigation.json'),
-			codingame: require('./locales/en/codingame.json')
+			codingame: require('./locales/nl/codingame.json')
 		},
 		zh: {
-			navigation: require('./locales/cn/navigation.json'),
-			codingame: require('./locales/en/codingame.json')
+			navigation: require('./locales/zh/navigation.json'),
+			codingame: require('./locales/zh/codingame.json')
 		}
 	},
 	ns: ['navigation, codingame'],
