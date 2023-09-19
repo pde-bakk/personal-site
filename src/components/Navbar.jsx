@@ -143,6 +143,7 @@ const Navbar = () => {
               {t("skills", { ns: "navigation" })}
             </Link>
           </li>
+          <li>{languageDropdown()}</li>
           <li className="py-6 text-4xl">
             <a
               href="https://www.linkedin.com/in/peer-de-bakker"
