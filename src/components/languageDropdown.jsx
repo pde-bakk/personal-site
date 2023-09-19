@@ -9,9 +9,9 @@ function LanguageDropdown() {
     { code: "en", name: "English", flag: "🇬🇧" },
     { code: "nl", name: "Dutch", flag: "🇳🇱" },
     { code: "zh", name: "Chinese", flag: "🇨🇳" },
-    { code: "fr", name: "French", flag: "🇫🇷" },
-    { code: "de", name: "German", flag: "🇩🇪" },
-    { code: "es", name: "Spanish", flag: "🇪🇸" },
+    // { code: "fr", name: "French", flag: "🇫🇷" },
+    // { code: "de", name: "German", flag: "🇩🇪" },
+    // { code: "es", name: "Spanish", flag: "🇪🇸" },
   ];
 
   const handleLanguageChange = (languageCode) => {
