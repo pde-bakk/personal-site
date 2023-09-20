@@ -27,13 +27,12 @@ const About = () => {
 
         <div>
           <img
-              src={graduation}
-              alt={t("image-alt-text")}
-              className="rounded-2xl mx-auto w-2/3 md:w-half"
+            src={graduation}
+            alt={t("image-alt-text")}
+            className="rounded-2xl mx-auto w-2/3 md:w-half"
           />
         </div>
       </div>
-
     </div>
   );
 };
