@@ -18,13 +18,9 @@ const About = () => {
         <div className=" py-16 rounded-md bg-cyan-800 flex flex-col justify-center items-center w-4/6">
           <div className="max-w-[1000px] w-full text-center gap-8 px-4">
             <p>{t("whoami")}</p>
-            <p>
-              {t("p1")}
-            </p>
+            <p>{t("p1")}</p>
             <br />
-            <p>
-              {t("p2")}
-            </p>
+            <p>{t("p2")}</p>
           </div>
         </div>
       </div>
