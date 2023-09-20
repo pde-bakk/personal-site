@@ -1,5 +1,0 @@
-# Trying to add extra spicy groutes
-/manoftheyear /about 301
-
-# Catch-all, stops the 404's from pouring in
-/*    /index.html  200
