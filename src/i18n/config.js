@@ -11,22 +11,25 @@ i18n
     // option
     resources: {
       en: {
-          home: require("./locales/en/home.json"),
-          navigation: require("./locales/en/navigation.json"),
-          codingame: require("./locales/en/codingame.json"),
+        home: require("./locales/en/home.json"),
+        navigation: require("./locales/en/navigation.json"),
+        codingame: require("./locales/en/codingame.json"),
+        about: require("./locales/en/about.json"),
       },
       nl: {
         home: require("./locales/nl/home.json"),
         navigation: require("./locales/nl/navigation.json"),
         codingame: require("./locales/nl/codingame.json"),
+        about: require("./locales/nl/about.json"),
       },
       zh: {
         home: require("./locales/zh/home.json"),
         navigation: require("./locales/zh/navigation.json"),
         codingame: require("./locales/zh/codingame.json"),
+        about: require("./locales/zh/about.json"),
       },
     },
-    ns: ["home", "navigation, codingame"],
+    ns: ["home", "navigation, codingame", "about"],
     defaultNS: "home",
     interpolation: {
       escapeValue: false, // not needed for react!!
