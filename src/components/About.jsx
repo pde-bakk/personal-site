@@ -1,6 +1,7 @@
 import React from "react";
 import useTitle from "./UseTitle";
 import { useTranslation } from "react-i18next";
+import graduation from "../assets/Codam/graduation.png";
 
 const About = () => {
   const [t] = useTranslation("about");
@@ -22,6 +23,14 @@ const About = () => {
             <br />
             <p>{t("p2")}</p>
           </div>
+        </div>
+
+        <div>
+          <img
+            src={graduation}
+            alt={t("image-alt-text")}
+            className="rounded-2xl mx-auto w-2/3 md:w-half"
+          />
         </div>
       </div>
     </div>
