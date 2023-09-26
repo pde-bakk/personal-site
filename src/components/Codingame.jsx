@@ -9,6 +9,7 @@ import {
 } from "../assets/Codingame";
 import useTitle from "./UseTitle";
 import { useTranslation } from "react-i18next";
+import ClashOfCodeRanking49th from "../assets/ClashOfCodeRanking49th.png";
 
 const Codingame = () => {
   const [t] = useTranslation("codingame");
@@ -40,6 +41,13 @@ const Codingame = () => {
             <br />
             {t("text.p7")}
           </p>
+          <div>
+            <img
+                src={ClashOfCodeRanking49th}
+                alt={t("image-alt-text")}
+                className="rounded-2xl mx-auto w-2/3 md:w-half"
+            />
+          </div>
           <p className="py-6 text-l">
             <a
               href={
