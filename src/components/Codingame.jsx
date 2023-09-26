@@ -43,9 +43,9 @@ const Codingame = () => {
           </p>
           <div>
             <img
-                src={ClashOfCodeRanking49th}
-                alt={t("image-alt-text")}
-                className="rounded-2xl mx-auto w-2/3 md:w-half"
+              src={ClashOfCodeRanking49th}
+              alt={t("image-alt-text")}
+              className="rounded-2xl mx-auto w-2/3 md:w-half"
             />
           </div>
           <p className="py-6 text-l">
