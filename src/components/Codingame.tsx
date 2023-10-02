@@ -6,7 +6,7 @@ import {
   ZeldaWitches,
   Pacman,
   FantasticBits,
-} from "../assets/Codingame";
+} from "../assets/Codingame/index";
 import useTitle from "./UseTitle";
 import { useTranslation } from "react-i18next";
 import ClashOfCodeRanking49th from "../assets/ClashOfCodeRanking49th.png";
@@ -15,7 +15,7 @@ const Codingame = () => {
   const [t] = useTranslation("codingame");
   useTitle(t("title"));
   return (
-    <div name="codingame" className="w-full text-gray-300 bg-background_colour">
+    <div className="w-full text-gray-300 bg-background_colour">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8 w-full flex justify-center items-center flex-col">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500">

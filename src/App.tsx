@@ -1,7 +1,7 @@
 import "./App.css";
 
 import ReactGA from "react-ga4";
-import { Route, Routes } from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 import About from "./components/About";
 import Codingame from "./components/Codingame";

@@ -12,12 +12,12 @@ ReactGA.send({
   title: "Work",
 });
 
-const Work = () => {
+const Work: React.FC /*<WorkProps>*/ = () => {
   // const [file, setFile] = useState(PDF_NAME);
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }) {
+  function onDocumentLoadSuccess({ numPages }: {numPages: number}): void {
     setNumPages(numPages);
   }
 
@@ -28,7 +28,7 @@ const Work = () => {
     setPageNumber(pageNumber + 1 >= numPages ? numPages : pageNumber + 1);
 
   return (
-    <div name="work" className="w-full bg-background_colour text-gray-300">
+    <div className="w-full bg-background_colour text-gray-300">
       <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center p-4">
         <div className="flex w-full flex-col items-center justify-center pb-8">
           <p className="inline border-b-4 border-cyan-500 text-4xl font-bold text-gray-300">
