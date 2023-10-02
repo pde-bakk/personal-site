@@ -7,11 +7,19 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-);
+const rootElement = document.getElementById("root");
+if (rootElement) {
+    const root = ReactDOM.createRoot(rootElement);
+
+    root.render(
+        <React.StrictMode>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </React.StrictMode>,
+    );
+    // Render your app using ReactDOM.createRoot
+    // Example: root.render(<App />);
+} else {
+    console.error('Root element with id "root" not found in the DOM.');
+}

@@ -1,3 +1,4 @@
+// @ts-ignore
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import React, { useState } from "react";
@@ -14,19 +15,23 @@ ReactGA.send({
 
 const Work: React.FC /*<WorkProps>*/ = () => {
   // const [file, setFile] = useState(PDF_NAME);
-  const [numPages, setNumPages] = useState(null);
+  const [numPages, setNumPages]: [null, ((value: (((prevState: null) => null) | null)) => void)] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
   function onDocumentLoadSuccess({ numPages }: {numPages: number}): void {
+    // @ts-ignore
     setNumPages(numPages);
   }
 
   const goToPrevPage = () =>
     setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
 
-  const goToNextPage = () =>
-    setPageNumber(pageNumber + 1 >= numPages ? numPages : pageNumber + 1);
+  function goToNextPage(): void {
+    // @ts-ignore
+    setPageNumber(pageNumber + 1 >= numPages ? numPages : pageNumber + 1)
+  }
 
+  // @ts-ignore
   return (
     <div className="w-full bg-background_colour text-gray-300">
       <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center p-4">
@@ -74,9 +79,9 @@ const Work: React.FC /*<WorkProps>*/ = () => {
             <Document
               file="/Kwartaalrapport_aah.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
-              onItemClick={
-                "https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"
-              }
+              // onItemClick={
+              //   "https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"
+              // }
             >
               <Page pageNumber={pageNumber} renderAnnotationLayer={false} />
             </Document>

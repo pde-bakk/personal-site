@@ -29,8 +29,6 @@ const Home = () => {
           <div className="flex">
             <Link
               to="about"
-              smooth={"true"}
-              duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
               {t("more")}
