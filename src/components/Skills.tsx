@@ -4,7 +4,7 @@ import useTitle from "./UseTitle";
 const Skills = () => {
 	useTitle("My 'skills'")
 	return (
-		<div name='skills' className='w-full h-screen bg-background_colour text-gray-300'>
+		<div className='w-full h-screen bg-background_colour text-gray-300'>
 			{/* Container */}
 			<div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
 				<div className=' w-full flex justify-center items-center flex-col mb-7'>

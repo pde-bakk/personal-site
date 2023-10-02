@@ -1,3 +1,4 @@
+// @ts-ignore
 import { DefaultPlayer as Video } from "react-html5video";
 import "react-html5video/dist/styles.css";
 import React, { useState } from "react";
@@ -12,23 +13,27 @@ ReactGA.send({
   title: "Work",
 });
 
-const Work = () => {
+const Work: React.FC /*<WorkProps>*/ = () => {
   // const [file, setFile] = useState(PDF_NAME);
-  const [numPages, setNumPages] = useState(null);
+  const [numPages, setNumPages]: [null, ((value: (((prevState: null) => null) | null)) => void)] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }) {
+  function onDocumentLoadSuccess({ numPages }: {numPages: number}): void {
+    // @ts-ignore
     setNumPages(numPages);
   }
 
   const goToPrevPage = () =>
     setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
 
-  const goToNextPage = () =>
-    setPageNumber(pageNumber + 1 >= numPages ? numPages : pageNumber + 1);
+  function goToNextPage(): void {
+    // @ts-ignore
+    setPageNumber(pageNumber + 1 >= numPages ? numPages : pageNumber + 1)
+  }
 
+  // @ts-ignore
   return (
-    <div name="work" className="w-full bg-background_colour text-gray-300">
+    <div className="w-full bg-background_colour text-gray-300">
       <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center p-4">
         <div className="flex w-full flex-col items-center justify-center pb-8">
           <p className="inline border-b-4 border-cyan-500 text-4xl font-bold text-gray-300">
@@ -74,9 +79,9 @@ const Work = () => {
             <Document
               file="/Kwartaalrapport_aah.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
-              onItemClick={
-                "https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"
-              }
+              // onItemClick={
+              //   "https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"
+              // }
             >
               <Page pageNumber={pageNumber} renderAnnotationLayer={false} />
             </Document>

@@ -21,32 +21,32 @@ const Navbar = () => {
         {/* menu */}
         <ul className="hidden md:flex gap-x-8">
           <li>
-            <Link to="home" smooth={"true"} duration={500}>
+            <Link to="home">
               {t("home")}
             </Link>
           </li>
           <li>
-            <Link to="about" smooth={"true"} duration={500}>
+            <Link to="about" >
               {t("about me")}
             </Link>
           </li>
           <li>
-            <Link to="portfolio" smooth={"true"} duration={500}>
+            <Link to="portfolio">
               {t("portfolio")}
             </Link>
           </li>
           <li>
-            <Link to="codingame" smooth={"true"} duration={500}>
+            <Link to="codingame">
               {t("codingame")}
             </Link>
           </li>
           <li>
-            <Link to="work" smooth={"true"} duration={500}>
+            <Link to="work">
               {t("work")}
             </Link>
           </li>
           <li>
-            <Link to="skills" smooth={"true"} duration={500}>
+            <Link to="skills">
               {t("skills")}
             </Link>
           </li>
@@ -81,8 +81,6 @@ const Navbar = () => {
             <Link
               onClick={handleClick}
               to="home"
-              smooth={"true"}
-              duration={500}
             >
               {t("home")}
             </Link>
@@ -92,8 +90,6 @@ const Navbar = () => {
             <Link
               onClick={handleClick}
               to="about"
-              smooth={"true"}
-              duration={500}
             >
               {t("about me")}
             </Link>
@@ -103,8 +99,6 @@ const Navbar = () => {
             <Link
               onClick={handleClick}
               to="portfolio"
-              smooth={"true"}
-              duration={500}
             >
               {t("portfolio")}
             </Link>
@@ -115,8 +109,6 @@ const Navbar = () => {
             <Link
               onClick={handleClick}
               to="codingame"
-              smooth={"true"}
-              duration={500}
             >
               {t("codingame")}
             </Link>
@@ -126,8 +118,6 @@ const Navbar = () => {
             <Link
               onClick={handleClick}
               to="work"
-              smooth={"true"}
-              duration={500}
             >
               {t("work")}
             </Link>
@@ -137,8 +127,6 @@ const Navbar = () => {
             <Link
               onClick={handleClick}
               to="skills"
-              smooth={"true"}
-              duration={500}
             >
               {t("skills")}
             </Link>

@@ -1,8 +1,8 @@
 import React from "react";
 import {
-  webserv_png,
-  gomoku_png,
-  ft_transcendence_jpg,
+  webserv_img,
+  gomoku_img,
+  ft_transcendence_img,
 } from "../assets/Projects";
 import {
   kubernetes,
@@ -17,10 +17,7 @@ import useTitle from "./UseTitle";
 const Portfolio = () => {
   useTitle("Peer de Bakker's portfolio");
   return (
-    <div
-      name="portfolio"
-      className="w-full h-max text-gray-300 bg-background_colour"
-    >
+    <div className="w-full h-max text-gray-300 bg-background_colour">
       <div className="mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8 w-full flex justify-center items-center flex-col">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-cyan-500">
@@ -36,7 +33,7 @@ const Portfolio = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Grid Item */}
           <div
-            style={{ backgroundImage: `url(${webserv_png})` }}
+            style={{ backgroundImage: `url(${webserv_img})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -101,7 +98,7 @@ const Portfolio = () => {
             </div>
           </div>
           <div
-            style={{ backgroundImage: `url(${gomoku_png})` }}
+            style={{ backgroundImage: `url(${gomoku_img})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
@@ -151,7 +148,7 @@ const Portfolio = () => {
           </div>
 
           <div
-            style={{ backgroundImage: `url(${ft_transcendence_jpg})` }}
+            style={{ backgroundImage: `url(${ft_transcendence_img})` }}
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
           >
             {/* Hover Effects */}
