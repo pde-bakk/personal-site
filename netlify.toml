@@ -8,3 +8,6 @@
 	from = "/*"
 	to = "/index.html"
 	status = 302
+
+[[plugins]]
+    package = "@netlify/plugin-lighthouse"
