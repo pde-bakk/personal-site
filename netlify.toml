@@ -1,6 +1,6 @@
-#[build]
-#  command = "npm run build"
-#  publish = "dist"
+[build]
+  command = "npm run build"
+  publish = "dist"
 
 
 ## https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
@@ -13,5 +13,5 @@
 	to = "/index.html"
 	status = 302
 
-[[plugins]]
-    package = "@netlify/plugin-lighthouse"
+#[[plugins]]
+#    package = "@netlify/plugin-lighthouse"
