@@ -11,7 +11,7 @@ interface TimelineItemProps {
 const TimelineItem = ({ company, role, dates, bullets, tech }: TimelineItemProps) => {
   return (
     <div className="relative pl-8 pb-10 border-l border-white/10 last:pb-0">
-      <div className="absolute left-0 top-1 w-3 h-3 -translate-x-[7px] rounded-full bg-accent_purple" />
+      <div className="timeline-dot absolute left-0 top-1 w-3 h-3 -translate-x-[7px] rounded-full bg-accent_purple" />
       <div className="mb-1">
         <h3 className="text-lg font-semibold text-white">{company}</h3>
         <p className="text-accent_purple font-medium text-sm">{role}</p>

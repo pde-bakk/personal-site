@@ -1,4 +1,6 @@
+import { useState } from "react";
 import TimelineItem from "../ui/TimelineItem";
+import TabToggle from "../ui/TabToggle";
 import { useInView } from "../../hooks/useInView";
 
 const experiences = [
@@ -6,6 +8,7 @@ const experiences = [
     company: "Auguria.io",
     role: "Software Engineer & Data Engineer",
     dates: "2023 — Present",
+    category: "work" as const,
     bullets: [
       "Built a data clustering pipeline in Go, Python, and Rust processing billions of records for anomaly detection",
       "Designed columnar storage layer with Apache Parquet and Arrow for high-throughput analytics",
@@ -20,6 +23,7 @@ const experiences = [
     company: "42 Paris",
     role: "Master's — AI & Cybersecurity",
     dates: "2022 — 2023",
+    category: "education" as const,
     bullets: [
       "Specialized in AI/ML and Cybersecurity tracks",
       "Reverse engineered C/C++ binaries and developed exploit chains",
@@ -32,6 +36,7 @@ const experiences = [
     company: "Panartis",
     role: "Backend Developer",
     dates: "2021 — 2022",
+    category: "work" as const,
     bullets: [
       "Built backend systems for unified art collection database platform",
       "Maintained DevOps infrastructure before transitioning to Azure with third-party contractors",
@@ -43,6 +48,7 @@ const experiences = [
     company: "Codam Amsterdam (42 Network)",
     role: "Bachelor's — Computer Science",
     dates: "2019 — 2022",
+    category: "education" as const,
     bullets: [
       "Peer-to-peer learning curriculum: built everything from scratch in C, then C++",
       "Wrote a custom nginx web server, reimplemented C++ STL containers, built a Kubernetes cluster",
@@ -52,8 +58,15 @@ const experiences = [
   },
 ];
 
+const TABS = ["Work", "Education"];
+
 const Experience = () => {
   const { ref, isVisible } = useInView();
+  const [activeTab, setActiveTab] = useState("Work");
+
+  const filtered = experiences.filter(
+    (exp) => exp.category === activeTab.toLowerCase()
+  );
 
   return (
     <section id="experience" className="bg-background_colour py-20">
@@ -62,11 +75,15 @@ const Experience = () => {
         className={`max-w-5xl mx-auto px-4 fade-in-section ${isVisible ? "is-visible" : ""}`}
       >
         <h2 className="text-3xl font-bold text-white mb-2">Experience</h2>
-        <div className="w-16 h-1 bg-accent_purple mb-10" />
+        <div className="w-16 h-1 bg-gradient-to-r from-accent_purple to-accent_cyan mb-10" />
+
+        <TabToggle tabs={TABS} activeTab={activeTab} onTabChange={setActiveTab} />
 
         <div>
-          {experiences.map((exp) => (
-            <TimelineItem key={exp.company} {...exp} />
+          {filtered.map((exp, i) => (
+            <div key={exp.company} className={`fade-item stagger-${i + 1}`}>
+              <TimelineItem {...exp} />
+            </div>
           ))}
         </div>
       </div>
