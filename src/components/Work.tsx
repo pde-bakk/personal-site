@@ -1,7 +1,5 @@
-// @ts-ignore
-import { DefaultPlayer as Video } from "react-html5video";
-import "react-html5video/dist/styles.css";
 import React, { useState } from "react";
+import { useVideo } from "react-use";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import ReactGA from "react-ga4";
@@ -13,13 +11,21 @@ ReactGA.send({
   title: "Work",
 });
 
-const Work: React.FC /*<WorkProps>*/ = () => {
-  // const [file, setFile] = useState(PDF_NAME);
-  const [numPages, setNumPages]: [null, ((value: (((prevState: null) => null) | null)) => void)] = useState(null);
+const Work: React.FC = () => {
+  const [numPages, setNumPages] = useState<number | null>(null);
   const [pageNumber, setPageNumber] = useState(1);
 
-  function onDocumentLoadSuccess({ numPages }: {numPages: number}): void {
-    // @ts-ignore
+  const [video] = useVideo(
+    <video
+      src="https://cdn.panartis.world/public/panartis_cloud_h264.mp4"
+      autoPlay
+      loop
+      muted
+      controls
+    />
+  );
+
+  function onDocumentLoadSuccess({ numPages }: { numPages: number }): void {
     setNumPages(numPages);
   }
 
@@ -27,11 +33,9 @@ const Work: React.FC /*<WorkProps>*/ = () => {
     setPageNumber(pageNumber - 1 <= 1 ? 1 : pageNumber - 1);
 
   function goToNextPage(): void {
-    // @ts-ignore
-    setPageNumber(pageNumber + 1 >= numPages ? numPages : pageNumber + 1)
+    setPageNumber(pageNumber + 1 >= (numPages ?? 1) ? (numPages ?? 1) : pageNumber + 1);
   }
 
-  // @ts-ignore
   return (
     <div className="w-full bg-background_colour text-gray-300">
       <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center p-4">
@@ -69,7 +73,7 @@ const Work: React.FC /*<WorkProps>*/ = () => {
             we know the market inside and out, and that we are continuously
             doing our homework on the latest trends.
           </p>
-          <p className='className="bg-gray-300 rounded-l py-2 px-4 font-bold text-gray-100 hover:bg-gray-400'>
+          <p className="bg-gray-300 rounded-l py-2 px-4 font-bold text-gray-100 hover:bg-gray-400">
             <a href={"https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"}>
               Click for more up to date reports
             </a>
@@ -89,16 +93,10 @@ const Work: React.FC /*<WorkProps>*/ = () => {
                 Next
               </button>
             </div>
-            {/*<p>*/}
-            {/*	Page {pageNumber} of {numPages}*/}
-            {/*</p>*/}
 
             <Document
               file="/Kwartaalrapport_aah.pdf"
               onLoadSuccess={onDocumentLoadSuccess}
-              // onItemClick={
-              //   "https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"
-              // }
             >
               <Page pageNumber={pageNumber} renderAnnotationLayer={false} />
             </Document>
@@ -124,22 +122,9 @@ const Work: React.FC /*<WorkProps>*/ = () => {
             3 days was catching up to me. Therefore I decided to quit my job and
             fully focus on Codam.
           </p>
-          <p className='className="bg-gray-300 rounded-l py-2 px-4 font-bold text-gray-100 hover:bg-gray-400'>
-            <Video
-              autoPlay
-              loop
-              muted
-              controls={["PlayPause", "Seek", "Time", "Volume", "Fullscreen"]}
-              onCanPlayThrough={() => {
-                // Do stuff
-              }}
-            >
-              <source
-                src="https://cdn.panartis.world/public/panartis_cloud_h264.mp4"
-                type="video/mp4"
-              />
-            </Video>
-          </p>
+          <div className="bg-gray-300 rounded-l py-2 px-4 font-bold text-gray-100 hover:bg-gray-400">
+            {video}
+          </div>
         </div>
       </div>
     </div>
