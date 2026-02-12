@@ -1,153 +1,131 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { Link } from "react-router-dom";
-// import { Link } from 'react-scroll';
-import { useTranslation } from "react-i18next";
-import languageDropdown from "./languageDropdown";
+import { Link } from "react-scroll";
+import LanguageDropdown from "./languageDropdown";
+
+const navItems = [
+  { label: "About", to: "about" },
+  { label: "Experience", to: "experience" },
+  { label: "Projects", to: "projects" },
+  { label: "Skills", to: "skills" },
+  { label: "Contact", to: "contact" },
+];
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-
-  const [t] = useTranslation("navigation");
+  const closeNav = () => setNav(false);
 
   return (
-    <div className="w-full flex justify-between items-center px-4 bg-background_colour text-gray-300">
-      <div>
-        <h1 className="font-thin text-2xl italic font-serif">PeerDB</h1>
-      </div>
+    <nav className="fixed top-0 w-full z-50 bg-background_colour/80 backdrop-blur-md border-b border-white/5">
+      <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-3">
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
+          <h1 className="font-bold text-xl text-white">
+            PdB<span className="text-accent_purple">.</span>
+          </h1>
+        </Link>
 
-      <nav>
-        {/* menu */}
-        <ul className="hidden md:flex gap-x-8">
-          <li>
-            <Link to="home">
-              {t("home")}
-            </Link>
+        {/* Desktop menu */}
+        <ul className="hidden md:flex items-center gap-x-6">
+          {navItems.map((item) => (
+            <li key={item.to} className="px-0">
+              <Link
+                to={item.to}
+                smooth={true}
+                duration={500}
+                offset={-60}
+                className="text-sm text-slate_body hover:text-accent_purple transition-colors cursor-pointer"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+          <li className="px-0">
+            <LanguageDropdown />
           </li>
-          <li>
-            <Link to="about" >
-              {t("about me")}
-            </Link>
-          </li>
-          <li>
-            <Link to="portfolio">
-              {t("portfolio")}
-            </Link>
-          </li>
-          <li>
-            <Link to="codingame">
-              {t("codingame")}
-            </Link>
-          </li>
-          <li>
-            <Link to="work">
-              {t("work")}
-            </Link>
-          </li>
-          <li>
-            <Link to="skills">
-              {t("skills")}
-            </Link>
-          </li>
-          <li>{languageDropdown()}</li>
-          <li>
+          <li className="px-0">
             <a
               href="https://www.linkedin.com/in/peer-de-bakker"
-              aria-label={"LinkedIn"}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-slate_body hover:text-accent_purple transition-colors"
             >
-              <FaLinkedin size={25} />
+              <FaLinkedin size={18} />
             </a>
           </li>
-          <li>
-            <a href="https://github.com/pde-bakk" aria-label={"GitHub"}>
-              <FaGithub size={25} />
+          <li className="px-0">
+            <a
+              href="https://github.com/pde-bakk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-slate_body hover:text-accent_purple transition-colors"
+            >
+              <FaGithub size={18} />
             </a>
           </li>
         </ul>
+
         {/* Hamburger */}
-        <div onClick={handleClick} className="md:hidden z-10">
-          {!nav ? <FaBars /> : <FaTimes />}
+        <div onClick={handleClick} className="md:hidden z-10 text-gray-300 cursor-pointer">
+          {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
         </div>
+
         {/* Mobile menu */}
         <ul
           className={
             !nav
               ? "hidden"
-              : "absolute top-0 left-0 w-full h-screen bg-background_colour flex flex-col justify-center items-center"
+              : "absolute top-0 left-0 w-full h-screen bg-background_colour flex flex-col justify-center items-center gap-8"
           }
         >
-          <li className="py-6 text-4xl">
-            <Link
-              onClick={handleClick}
-              to="home"
-            >
-              {t("home")}
-            </Link>
+          {navItems.map((item) => (
+            <li key={item.to} className="text-3xl">
+              <Link
+                onClick={closeNav}
+                to={item.to}
+                smooth={true}
+                duration={500}
+                offset={-60}
+                className="text-gray-300 hover:text-accent_purple transition-colors cursor-pointer"
+              >
+                {item.label}
+              </Link>
+            </li>
+          ))}
+          <li>
+            <LanguageDropdown />
           </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link
-              onClick={handleClick}
-              to="about"
-            >
-              {t("about me")}
-            </Link>
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link
-              onClick={handleClick}
-              to="portfolio"
-            >
-              {t("portfolio")}
-            </Link>
-            {/*<Link to="/portfolio">Portfolio</Link>*/}
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link
-              onClick={handleClick}
-              to="codingame"
-            >
-              {t("codingame")}
-            </Link>
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link
-              onClick={handleClick}
-              to="work"
-            >
-              {t("work")}
-            </Link>
-          </li>
-          <li className="py-6 text-4xl">
-            {" "}
-            <Link
-              onClick={handleClick}
-              to="skills"
-            >
-              {t("skills")}
-            </Link>
-          </li>
-          <li>{languageDropdown()}</li>
-          <li className="py-6 text-4xl">
+          <li className="flex gap-6 text-2xl">
             <a
               href="https://www.linkedin.com/in/peer-de-bakker"
-              aria-label={"LinkedIn"}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="text-gray-300 hover:text-accent_purple"
             >
               <FaLinkedin />
             </a>
-          </li>
-          <li className="py-6 text-4xl">
-            <a href="https://github.com/pde-bakk" aria-label={"GitHub"}>
+            <a
+              href="https://github.com/pde-bakk"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="text-gray-300 hover:text-accent_purple"
+            >
               <FaGithub />
             </a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
+
 export default Navbar;
