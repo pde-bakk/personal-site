@@ -15,8 +15,9 @@ import React from "react";
 
 // https://blog.webdevsimplified.com/2022-07/react-router/
 
-if (process.env.REACT_APP_GA_MEASUREMENT_ID) {
-    ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID);
+const GA_ID = import.meta.env.VITE_GA_MEASUREMENT_ID;
+if (GA_ID) {
+    ReactGA.initialize(GA_ID);
 }
 
 function App() {

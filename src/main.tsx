@@ -1,4 +1,4 @@
-import "./index.css";
+import "./main.css";
 import "./i18n/config";
 
 import React from "react";
