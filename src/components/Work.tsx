@@ -35,22 +35,39 @@ const Work: React.FC /*<WorkProps>*/ = () => {
   return (
     <div className="w-full bg-background_colour text-gray-300">
       <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col justify-center p-4">
+
+        <div className="flex w-full flex-col items-center justify-center pb-8">
+          <p className="inline border-b-4 border-cyan-500 text-4xl font-bold text-gray-300">
+            Auguria.io
+          </p>
+          <p className="py-6 text-2xl">
+            Since 2023 I've been working full-time at Auguria.io as a Software
+            Engineer and Data Engineer. I built a data clustering pipeline in
+            Go, Python and Rust that processes billions of records to enable
+            anomaly detection. I work with Apache Parquet and Arrow for columnar
+            storage, set up APIs in Python FastAPI and Rust Axum, and manage
+            Kubernetes deployments for tens of microservices. I also maintain
+            CI/CD pipelines with GitHub Actions, administer PostgreSQL databases
+            with billions of records, and manage our AWS infrastructure.
+          </p>
+        </div>
+
         <div className="flex w-full flex-col items-center justify-center pb-8">
           <p className="inline border-b-4 border-cyan-500 text-4xl font-bold text-gray-300">
             Amsterdam at Home
           </p>
           <p className="py-6 text-2xl">
-            Since 2016 I've been working at Amsterdam at Home makelaars, a small
-            family-owned real-estate agency in Amsterdam. In the beginning,
-            mostly working the phone, scheduling appointments for our clients,
-            but now in charge of the reports on the Amsterdam housing market
-            that we produce in-house. The reports the NVM was making were too
-            bland, too boring and so we figured we could do better. Our reports
-            allow you to segment the market by neighbourhood, size of the
-            appartment and whether it was built before World War II. These
-            reports were and still are our proof that we know the market inside
-            and out, and that we are continuously doing our homework on the
-            latest trends.
+            From 2019 to 2025 I worked part-time at Amsterdam at Home
+            makelaars, a small family-owned real-estate agency in Amsterdam.
+            In the beginning, mostly working the phone, scheduling appointments
+            for our clients, but eventually in charge of the reports on the
+            Amsterdam housing market that we produce in-house. The reports the
+            NVM was making were too bland, too boring and so we figured we could
+            do better. Our reports allow you to segment the market by
+            neighbourhood, size of the appartment and whether it was built
+            before World War II. These reports were and still are our proof that
+            we know the market inside and out, and that we are continuously
+            doing our homework on the latest trends.
           </p>
           <p className='className="bg-gray-300 rounded-l py-2 px-4 font-bold text-gray-100 hover:bg-gray-400'>
             <a href={"https://www.makelaaramsterdam.nl/woningmarkt-amsterdam/"}>

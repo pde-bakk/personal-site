@@ -40,6 +40,9 @@ const Codingame = () => {
             <br />
             <br />
             {t("text.p7")}
+            <br />
+            <br />
+            {t("text.p8")}
           </p>
           <div>
             <img

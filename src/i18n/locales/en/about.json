@@ -1,7 +1,7 @@
 {
   "title": "About Peer de Bakker",
-  "whoami": "I'm Cybersecurity Engineer, graduated from Codam and 42Paris.",
-  "p1": "Back in 2019, I did the piscine at Codam (Amsterdam) and it was there I wrote my first ever lines of code. Since then, it's been a wild journey which has given me a wealth of hobbies and skills. During these 2 years I've learnt many a thing about Software Engineering, Embedded Systems and Web Development (front-end and back-end).",
-  "p2": "After finishing the Common Core (read: Bachelor), I was intrigued by AI and decided to make it my focus area. Because I also believed that every engineer should have at least some knowledge about Cyber Security (since it's becoming ever so important), I went ahead and also dived into Binary Exploitation and Reverse Engineering. That, combined with listening to tons of Darknet Diaries, has brought me to now pursue a career in Cyber Security.",
+  "whoami": "I'm a Senior Software Engineer passionate about Cybersecurity and AI.",
+  "p1": "Back in 2019, I did the Piscine at Codam (Amsterdam) and it was there I wrote my first ever lines of code. Since then, it's been a wild journey which has given me a wealth of hobbies and skills. During these years I've learnt many a thing about Software Engineering, Embedded Systems and Web Development (front-end and back-end).",
+  "p2": "After finishing my Bachelor's, I worked at Panartis as a back-end developer, then returned to finish my Master's at 42 Paris. This is where I was exposed to AI and Cybersecurity, and two new flames were sparked. Now I work at Auguria.io as a Software Engineer and Data Engineer, building data clustering pipelines in Go, Python and Rust that process billions of records, managing Kubernetes deployments, and maintaining AWS infrastructure.",
   "image-alt-text": "Graduation"
 }

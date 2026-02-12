@@ -11,30 +11,42 @@ const Skills = () => {
 					<p className='text-4xl font-bold inline border-b-4 border-cyan-500 text-center '>Skills</p>
 					<p className='py-4 text-2xl'>Here's a list of languages/technologies I work with, because why not?</p>
 				</div>
-				<div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+				<div className='w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center py-8'>
 					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
-						<p className='my-4'>C</p>
+						<p className='my-4'>C/C++</p>
 					</div>
 					<div className='shadow-md shadow-[#FFD43B] hover:scale-110 duration-500'>
 						<p className='my-4'>Python</p>
 					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-						<p className='my-4'>C++</p>
+					<div className='shadow-md shadow-[#00ADD8] hover:scale-110 duration-500'>
+						<p className='my-4'>Go</p>
 					</div>
-					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
-						<p className='my-4'>VB.NET</p>
+					<div className='shadow-md shadow-[#DEA584] hover:scale-110 duration-500'>
+						<p className='my-4'>Rust</p>
 					</div>
-					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
-						<p className='my-4'>Github</p>
+					<div className='shadow-md shadow-[#3178C6] hover:scale-110 duration-500'>
+						<p className='my-4'>TypeScript</p>
 					</div>
-					<div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-						<p className='my-4'>React</p>
+					<div className='shadow-md shadow-[#336791] hover:scale-110 duration-500'>
+						<p className='my-4'>PostgreSQL</p>
 					</div>
-					<div className='shadow-md shadow-[#e0115f] hover:scale-110 duration-500'>
-						<p className='my-4'>Ruby</p>
+					<div className='shadow-md shadow-[#326CE5] hover:scale-110 duration-500'>
+						<p className='my-4'>Kubernetes</p>
 					</div>
-					<div className='shadow-md shadow-[#1868cc] hover:scale-110 duration-500'>
-						<p className='my-4'>Assembly</p>
+					<div className='shadow-md shadow-[#2496ED] hover:scale-110 duration-500'>
+						<p className='my-4'>Docker</p>
+					</div>
+					<div className='shadow-md shadow-[#FF9900] hover:scale-110 duration-500'>
+						<p className='my-4'>AWS</p>
+					</div>
+					<div className='shadow-md shadow-[#244c5a] hover:scale-110 duration-500'>
+						<p className='my-4'>gRPC</p>
+					</div>
+					<div className='shadow-md shadow-[#2088FF] hover:scale-110 duration-500'>
+						<p className='my-4'>CI/CD</p>
+					</div>
+					<div className='shadow-md shadow-[#F05032] hover:scale-110 duration-500'>
+						<p className='my-4'>Git</p>
 					</div>
 				</div>
 			</div>
