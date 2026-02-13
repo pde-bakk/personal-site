@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 import TechPill from "./TechPill";
 import MediaModal from "./MediaModal";

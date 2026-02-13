@@ -1,3 +1,4 @@
+import React from "react";
 import FadeInSection from "../ui/FadeInSection";
 import { botChallenges, formatPercentile } from "../../data/competitive";
 

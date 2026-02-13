@@ -1,3 +1,4 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 import MetricCard from "../ui/MetricCard";
 import SocialLinks from "../ui/SocialLinks";
