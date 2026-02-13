@@ -119,3 +119,62 @@ code {
 .animate-blink {
   animation: blink 0.8s step-end infinite;
 }
+
+/* MetricCard gradient border glow */
+.metric-card-glow {
+  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+  animation: borderGlow 3s ease-in-out infinite;
+}
+
+@keyframes borderGlow {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Shimmer sweep on metric cards */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    135deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.08) 50%,
+    transparent 60%
+  );
+  transform: translateX(-100%);
+  pointer-events: none;
+}
+.is-visible .shimmer::after {
+  animation: shimmer 0.8s ease-out forwards;
+}
+.is-visible .stagger-1 .shimmer::after {
+  animation-delay: 200ms;
+}
+.is-visible .stagger-2 .shimmer::after {
+  animation-delay: 400ms;
+}
+.is-visible .stagger-3 .shimmer::after {
+  animation-delay: 600ms;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

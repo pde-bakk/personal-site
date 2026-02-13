@@ -42,9 +42,17 @@ const Hero = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-16">
-          <MetricCard value="Billions" label={t("metric_records")} />
-          <MetricCard value="Top 0.1%" label={t("metric_codingame")} />
-          <MetricCard value="3 Languages" label={t("metric_languages")} />
+          <MetricCard value="Billions" label={t("metric_records")} index={0} />
+          <MetricCard
+            value="Top 0.1%"
+            label={t("metric_codingame")}
+            index={1}
+          />
+          <MetricCard
+            value="3+ Languages"
+            label={t("metric_languages")}
+            index={2}
+          />
         </div>
       </FadeInSection>
     </section>
