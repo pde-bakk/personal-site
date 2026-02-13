@@ -1,6 +1,10 @@
 {
+  "greeting": "Hi, I'm",
   "title": "Peer de Bakker",
   "subtitle": "Senior Software Engineer",
   "description": "Building data pipelines that process billions of records, crafting high-performance systems in Go, Rust, and Python, and breaking things apart to understand how they work.",
-  "image-alt-text": "Peer de Bakker"
+  "image-alt-text": "Peer de Bakker",
+  "metric_records": "Records processed in production pipelines",
+  "metric_codingame": "Clash of Code — Codingame",
+  "metric_languages": "English, Dutch, French"
 }

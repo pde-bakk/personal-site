@@ -1,6 +1,10 @@
 {
-  "title": "Hoi, ik ben Peer, de Software Engineer!",
-  "description": "Mijn naam is Peer de Bakker. Mijn tech-reis begon bij Codam Amsterdam, waar ik mijn eerste regels code schreef. Na mijn Bachelor heb ik bij Panartis gewerkt en daarna ben ik teruggegaan om mijn Master af te ronden aan 42 Paris — waar ik in aanraking kwam met AI en Cybersecurity. Nu ben ik Software Engineer en Data Engineer bij Auguria.io, waar ik data pipelines bouw die miljarden records verwerken.",
-  "more": "Meer over mij",
-  "image-alt-text": "Dat ben ik!"
+  "greeting": "Hoi, ik ben",
+  "title": "Peer de Bakker",
+  "subtitle": "Senior Software Engineer",
+  "description": "Ik bouw datapipelines die miljarden records verwerken, ontwikkel high-performance systemen in Go, Rust en Python, en breek dingen uit elkaar om te begrijpen hoe ze werken.",
+  "image-alt-text": "Peer de Bakker",
+  "metric_records": "Records verwerkt in productiepipelines",
+  "metric_codingame": "Clash of Code — Codingame",
+  "metric_languages": "Engels, Nederlands, Frans"
 }

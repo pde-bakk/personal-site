@@ -1,7 +1,9 @@
 {
+  "section_title": "Over Mij",
   "title": "Over Peer de Bakker",
   "whoami": "Ik ben een Senior Software Engineer met een passie voor Cybersecurity en AI.",
-  "p1": "In 2019 deed ik de Piscine bij Codam (Amsterdam) en daar schreef ik mijn allereerste regels code. Sindsdien is het een wilde reis geweest die me een schat aan hobby's en vaardigheden heeft opgeleverd. In deze jaren heb ik veel geleerd over Software Engineering, Embedded Systems en Web Development (front-end en back-end).",
-  "p2": "Na het afronden van mijn Bachelor heb ik bij Panartis gewerkt als back-end developer en ben daarna teruggegaan om mijn Master af te ronden aan 42 Paris. Hier kwam ik in aanraking met AI en Cybersecurity, en twee nieuwe vlammen waren aangewakkerd. Nu werk ik bij Auguria.io als Software Engineer en Data Engineer, waar ik data clustering pipelines bouw in Go, Python en Rust die miljarden records verwerken, Kubernetes-deployments beheer en AWS-infrastructuur onderhoud.",
+  "p1": "Mijn tech-reis begon bij Codam Amsterdam (42 Network), waar ik mijn eerste regels code schreef in C. Na het afronden van het kernprogramma heb ik stage gelopen en gewerkt bij Panartis, waar ik backendsystemen bouwde voor kunstcollectiedatabases. Daarna heb ik mijn Master afgerond aan 42 Paris, met specialisatie in AI en Cybersecurity.",
+  "p2": "Nu ben ik Software Engineer en Data Engineer bij Auguria.io, waar ik data clustering pipelines bouw in Go, Python en Rust die miljarden records verwerken voor anomaliedetectie. Ik beheer Kubernetes-deployments voor tientallen microservices, beheer PostgreSQL-databases en onderhoud CI/CD-pipelines en AWS-infrastructuur.",
+  "tech_stack": "Tech Stack",
   "image-alt-text": "Diploma uitreiking"
 }

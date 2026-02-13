@@ -1,17 +1,14 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
 import LanguageDropdown from "./languageDropdown";
+import { SOCIAL_LINKS } from "../data/social";
 
-const navItems = [
-  { label: "About", to: "about" },
-  { label: "Experience", to: "experience" },
-  { label: "Projects", to: "projects" },
-  { label: "Skills", to: "skills" },
-  { label: "Contact", to: "contact" },
-];
+const navKeys = ["about", "experience", "projects", "skills", "contact"] as const;
 
 const Navbar = () => {
+  const { t } = useTranslation("navigation");
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
   const closeNav = () => setNav(false);
@@ -32,16 +29,16 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <ul className="hidden md:flex items-center gap-x-6">
-          {navItems.map((item) => (
-            <li key={item.to} className="px-0">
+          {navKeys.map((key) => (
+            <li key={key} className="px-0">
               <Link
-                to={item.to}
+                to={key}
                 smooth={true}
                 duration={500}
                 offset={-60}
                 className="text-sm text-slate_body hover:text-accent_purple transition-colors cursor-pointer"
               >
-                {item.label}
+                {t(key)}
               </Link>
             </li>
           ))}
@@ -50,7 +47,7 @@ const Navbar = () => {
           </li>
           <li className="px-0">
             <a
-              href="https://www.linkedin.com/in/peer-de-bakker"
+              href={SOCIAL_LINKS.linkedin.url}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -61,7 +58,7 @@ const Navbar = () => {
           </li>
           <li className="px-0">
             <a
-              href="https://github.com/pde-bakk"
+              href={SOCIAL_LINKS.github.url}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -85,17 +82,17 @@ const Navbar = () => {
               : "absolute top-0 left-0 w-full h-screen bg-background_colour flex flex-col justify-center items-center gap-8"
           }
         >
-          {navItems.map((item) => (
-            <li key={item.to} className="text-3xl">
+          {navKeys.map((key) => (
+            <li key={key} className="text-3xl">
               <Link
                 onClick={closeNav}
-                to={item.to}
+                to={key}
                 smooth={true}
                 duration={500}
                 offset={-60}
                 className="text-gray-300 hover:text-accent_purple transition-colors cursor-pointer"
               >
-                {item.label}
+                {t(key)}
               </Link>
             </li>
           ))}
@@ -104,7 +101,7 @@ const Navbar = () => {
           </li>
           <li className="flex gap-6 text-2xl">
             <a
-              href="https://www.linkedin.com/in/peer-de-bakker"
+              href={SOCIAL_LINKS.linkedin.url}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
@@ -113,7 +110,7 @@ const Navbar = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/pde-bakk"
+              href={SOCIAL_LINKS.github.url}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"

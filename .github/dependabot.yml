@@ -14,7 +14,7 @@ updates:
       day: "monday"
       time: "08:00"
       timezone: "Europe/Amsterdam"
-    # Allow up to 10 open pull requests for pip dependencies
+    # Allow up to 10 open pull requests for npm dependencies
     # open-pull-requests-limit: 10
     ignore:
       - dependency-name: "*"

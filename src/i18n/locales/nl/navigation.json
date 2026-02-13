@@ -1,8 +1,7 @@
 {
-  "home": "Home",
-  "about me": "Over Mij",
-  "portfolio": "Portfolio",
-  "codingame": "Codingame",
-  "work": "Werkervaring",
-  "skills": "Vaardigheden"
+  "about": "Over Mij",
+  "experience": "Werkervaring",
+  "projects": "Portfolio",
+  "skills": "Vaardigheden",
+  "contact": "Contact"
 }

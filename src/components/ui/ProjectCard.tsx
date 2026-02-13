@@ -21,6 +21,8 @@ const ProjectCard = ({ name, icon, problem, approach, tech, link, media }: Proje
       <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/20 hover:border-accent_purple/40">
         {media && (
           <button
+            type="button"
+            aria-label="View project media"
             onClick={() => setShowModal(true)}
             className="relative w-full overflow-hidden rounded-t-xl cursor-pointer"
           >

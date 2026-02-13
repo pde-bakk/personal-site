@@ -1,6 +1,10 @@
 {
-  "title": "大家好，我叫皮儿，是高级软件工程师！",
-  "description": "我叫 Peer de Bakker。我的技术之旅始于阿姆斯特丹的 Codam，在那里我写下了第一行代码。完成学士学位后，我在 Panartis 工作，之后回到 42 Paris 完成了硕士学位——在那里我接触到了人工智能和网络安全。现在我在 Auguria.io 担任软件工程师和数据工程师，构建处理数十亿条记录的数据管道。",
-  "more": "更多关于我",
-  "image-alt-text": "这就是我!"
+  "greeting": "你好，我是",
+  "title": "Peer de Bakker",
+  "subtitle": "高级软件工程师",
+  "description": "构建处理数十亿条记录的数据管道，用 Go、Rust 和 Python 打造高性能系统，并拆解事物以理解其运作方式。",
+  "image-alt-text": "Peer de Bakker",
+  "metric_records": "生产管道中处理的记录",
+  "metric_codingame": "Clash of Code — Codingame",
+  "metric_languages": "英语、荷兰语、法语"
 }

@@ -18,8 +18,8 @@ const TimelineItem = ({ company, role, dates, bullets, tech }: TimelineItemProps
         <p className="text-slate_body text-sm">{dates}</p>
       </div>
       <ul className="mt-3 space-y-2">
-        {bullets.map((bullet, i) => (
-          <li key={i} className="text-sm text-slate_body flex gap-2">
+        {bullets.map((bullet) => (
+          <li key={bullet} className="text-sm text-slate_body flex gap-2">
             <span className="text-accent_purple mt-1 shrink-0">&#8227;</span>
             {bullet}
           </li>
