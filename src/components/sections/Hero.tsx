@@ -2,10 +2,13 @@ import { useTranslation } from "react-i18next";
 import MetricCard from "../ui/MetricCard";
 import SocialLinks from "../ui/SocialLinks";
 import FadeInSection from "../ui/FadeInSection";
+import { useTypewriter } from "../../hooks/useTypewriter";
 import peerdb_jpg from "../../assets/peerdb.jpg";
 
 const Hero = () => {
   const { t } = useTranslation("home");
+  const roles = t("roles", { returnObjects: true }) as string[];
+  const typed = useTypewriter({ words: roles });
 
   return (
     <section
@@ -21,8 +24,9 @@ const Hero = () => {
             <h1 className="text-5xl sm:text-7xl font-bold text-white mb-4">
               {t("title")}
             </h1>
-            <h2 className="text-2xl sm:text-3xl font-semibold text-slate_body mb-6">
-              {t("subtitle")}
+            <h2 className="text-2xl sm:text-3xl font-semibold text-slate_body mb-6 h-10">
+              <span>{typed}</span>
+              <span className="inline-block w-[3px] h-[1em] bg-accent_purple ml-1 align-middle animate-blink" />
             </h2>
             <p className="text-slate_body max-w-lg mb-8">{t("description")}</p>
             <SocialLinks />
