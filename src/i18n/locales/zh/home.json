@@ -2,6 +2,7 @@
   "greeting": "你好，我是",
   "title": "Peer de Bakker",
   "subtitle": "高级软件工程师",
+  "roles": ["高级软件工程师", "系统程序员", "数据管道架构师", "竞技编程者"],
   "description": "构建处理数十亿条记录的数据管道，用 Go、Rust 和 Python 打造高性能系统，并拆解事物以理解其运作方式。",
   "image-alt-text": "Peer de Bakker",
   "metric_records": "生产管道中处理的记录",

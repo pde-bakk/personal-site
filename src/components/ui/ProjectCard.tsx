@@ -1,7 +1,9 @@
+import React from "react";
 import { useState } from "react";
 import TechPill from "./TechPill";
 import MediaModal from "./MediaModal";
 import { FaGithub, FaPlay } from "react-icons/fa";
+import { useTilt } from "../../hooks/useTilt";
 
 interface ProjectCardProps {
   name: string;
@@ -23,10 +25,17 @@ const ProjectCard = ({
   media,
 }: ProjectCardProps) => {
   const [showModal, setShowModal] = useState(false);
+  const { ref, handleMouseMove, handleMouseLeave } = useTilt<HTMLDivElement>();
 
   return (
     <>
-      <div className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-purple-500/20 hover:border-accent_purple/40">
+      <div
+        ref={ref}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        className="group bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/20 hover:border-accent_purple/40"
+        style={{ transformStyle: "preserve-3d", willChange: "transform" }}
+      >
         {media && (
           <button
             type="button"

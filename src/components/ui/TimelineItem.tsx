@@ -1,3 +1,4 @@
+import React from "react";
 import TechPill from "./TechPill";
 
 interface TimelineItemProps {
