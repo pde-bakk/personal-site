@@ -11,14 +11,15 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    name: "Data Clustering Pipeline",
-    icon: "\uD83D\uDCCA",
+    name: "Auguria — SIEM Optimization Platform",
+    icon: "\uD83D\uDEE1\uFE0F",
     category: "work",
-    problem: "Process billions of records for anomaly detection at scale",
+    problem:
+      "Security teams drown in SIEM noise — 70% comes from 30% of sources — missing real threats while overpaying for log storage",
     approach:
-      "Multi-language pipeline with Go orchestration, Rust compute, Python ML — columnar storage via Parquet/Arrow",
-    tech: ["Go", "Rust", "Python", "Parquet", "gRPC"],
-    link: "https://github.com/pde-bakk",
+      "AI-native data enrichment pipeline: Go orchestration, Rust compute, Python ML. Clusters billions of records via Parquet/Arrow to cut SIEM costs 30% and achieve 85%+ true-positive detection rates",
+    tech: ["Go", "Rust", "Python", "Parquet", "gRPC", "AI/ML"],
+    link: "https://auguria.io",
   },
   {
     name: "Custom Nginx",

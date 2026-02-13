@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import TechPill from "./TechPill";
 import MediaModal from "./MediaModal";
-import { FaGithub, FaPlay } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaPlay } from "react-icons/fa";
 import { useTilt } from "../../hooks/useTilt";
 
 interface ProjectCardProps {
@@ -87,7 +87,15 @@ const ProjectCard = ({
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm text-accent_purple hover:text-accent_cyan transition-colors"
           >
-            <FaGithub /> View Code
+            {link.includes("github") ? (
+              <>
+                <FaGithub /> View Code
+              </>
+            ) : (
+              <>
+                <FaExternalLinkAlt /> Visit Site
+              </>
+            )}
           </a>
         </div>
       </div>
