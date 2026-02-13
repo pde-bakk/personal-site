@@ -18,7 +18,15 @@ function challenge(
   total: number,
   url: string,
 ): BotChallenge {
-  return { id, title, subtitle, ranking, total, url, cover: `${IMG_BASE}${id}` };
+  return {
+    id,
+    title,
+    subtitle,
+    ranking,
+    total,
+    url,
+    cover: `${IMG_BASE}${id}`,
+  };
 }
 
 export const botChallenges: BotChallenge[] = [

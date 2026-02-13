@@ -5,7 +5,13 @@ import { Link } from "react-scroll";
 import LanguageDropdown from "./languageDropdown";
 import { SOCIAL_LINKS } from "../data/social";
 
-const navKeys = ["about", "experience", "projects", "skills", "contact"] as const;
+const navKeys = [
+  "about",
+  "experience",
+  "projects",
+  "skills",
+  "contact",
+] as const;
 
 const Navbar = () => {
   const { t } = useTranslation("navigation");
@@ -16,12 +22,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background_colour/80 backdrop-blur-md border-b border-white/5">
       <div className="max-w-5xl mx-auto flex justify-between items-center px-4 py-3">
-        <Link
-          to="hero"
-          smooth={true}
-          duration={500}
-          className="cursor-pointer"
-        >
+        <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
           <h1 className="font-bold text-xl text-white">
             PdB<span className="text-accent_purple">.</span>
           </h1>
@@ -70,7 +71,10 @@ const Navbar = () => {
         </ul>
 
         {/* Hamburger */}
-        <div onClick={handleClick} className="md:hidden z-10 text-gray-300 cursor-pointer">
+        <div
+          onClick={handleClick}
+          className="md:hidden z-10 text-gray-300 cursor-pointer"
+        >
           {!nav ? <FaBars size={20} /> : <FaTimes size={20} />}
         </div>
 

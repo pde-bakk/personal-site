@@ -19,7 +19,10 @@ const SkillsSection = () => {
               </h3>
               <ul className="space-y-2">
                 {group.skills.map((skill) => (
-                  <li key={skill} className="text-slate_body text-sm flex items-center gap-2">
+                  <li
+                    key={skill}
+                    className="text-slate_body text-sm flex items-center gap-2"
+                  >
                     <span className="w-1.5 h-1.5 rounded-full bg-accent_purple/50" />
                     {skill}
                   </li>

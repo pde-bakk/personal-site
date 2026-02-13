@@ -14,11 +14,7 @@ const Contact = () => {
         <p className="text-slate_body mb-2">{t("roles")}</p>
         <p className="text-slate_body mb-8">{t("location")}</p>
 
-        <SocialLinks
-          iconSize={20}
-          showLabels
-          className="justify-center mb-8"
-        />
+        <SocialLinks iconSize={20} showLabels className="justify-center mb-8" />
       </FadeInSection>
     </section>
   );

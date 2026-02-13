@@ -10,14 +10,36 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     titleKey: "data",
-    skills: ["PostgreSQL", "Apache Parquet", "Arrow", "FastAPI", "Axum", "gRPC", "REST"],
+    skills: [
+      "PostgreSQL",
+      "Apache Parquet",
+      "Arrow",
+      "FastAPI",
+      "Axum",
+      "gRPC",
+      "REST",
+    ],
   },
   {
     titleKey: "infrastructure",
-    skills: ["Kubernetes", "Docker", "AWS", "CI/CD", "GitHub Actions", "Terraform", "Linux"],
+    skills: [
+      "Kubernetes",
+      "Docker",
+      "AWS",
+      "CI/CD",
+      "GitHub Actions",
+      "Terraform",
+      "Linux",
+    ],
   },
   {
     titleKey: "security",
-    skills: ["Reverse Engineering", "Binary Exploitation", "Cryptography", "Ghidra", "Penetration Testing"],
+    skills: [
+      "Reverse Engineering",
+      "Binary Exploitation",
+      "Cryptography",
+      "Ghidra",
+      "Penetration Testing",
+    ],
   },
 ];

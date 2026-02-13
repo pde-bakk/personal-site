@@ -5,7 +5,9 @@ const Competitive = () => {
   return (
     <section id="competitive" className="bg-background_colour py-20">
       <FadeInSection className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-white mb-2">Competitive Programming</h2>
+        <h2 className="text-3xl font-bold text-white mb-2">
+          Competitive Programming
+        </h2>
         <div className="w-16 h-1 bg-accent_purple mb-8" />
 
         <div className="flex items-center gap-3 mb-8">
@@ -22,7 +24,9 @@ const Competitive = () => {
           </a>
         </div>
 
-        <h3 className="text-xl font-semibold text-white mb-4">Bot Programming</h3>
+        <h3 className="text-xl font-semibold text-white mb-4">
+          Bot Programming
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {botChallenges.map((ch) => (
             <a

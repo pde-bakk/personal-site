@@ -15,7 +15,8 @@ export const projects: Project[] = [
     icon: "\uD83D\uDCCA",
     category: "work",
     problem: "Process billions of records for anomaly detection at scale",
-    approach: "Multi-language pipeline with Go orchestration, Rust compute, Python ML — columnar storage via Parquet/Arrow",
+    approach:
+      "Multi-language pipeline with Go orchestration, Rust compute, Python ML — columnar storage via Parquet/Arrow",
     tech: ["Go", "Rust", "Python", "Parquet", "gRPC"],
     link: "https://github.com/pde-bakk",
   },
@@ -24,7 +25,8 @@ export const projects: Project[] = [
     icon: "\uD83C\uDF10",
     category: "university",
     problem: "Understand HTTP servers from the ground up",
-    approach: "Built a lightweight, RFC-compliant web server handling CGI, chunked transfer, and virtual hosts",
+    approach:
+      "Built a lightweight, RFC-compliant web server handling CGI, chunked transfer, and virtual hosts",
     tech: ["C++", "HTTP", "Sockets", "CGI"],
     link: "https://github.com/42pde-bakk/webserv.git",
   },
@@ -33,7 +35,8 @@ export const projects: Project[] = [
     icon: "\uD83D\uDD10",
     category: "university",
     problem: "Learn cryptographic primitives by implementing them",
-    approach: "Reimplemented MD5, SHA256, DES, and RSA algorithms from specification",
+    approach:
+      "Reimplemented MD5, SHA256, DES, and RSA algorithms from specification",
     tech: ["C", "Cryptography", "Math"],
     link: "https://github.com/42pde-bakk/ft_ssl.git",
   },
@@ -42,7 +45,8 @@ export const projects: Project[] = [
     icon: "\uD83E\uDDE0",
     category: "university",
     problem: "Create an AI that beats humans at Gomoku",
-    approach: "Minimax algorithm with alpha-beta pruning and heuristic board evaluation",
+    approach:
+      "Minimax algorithm with alpha-beta pruning and heuristic board evaluation",
     tech: ["C++", "AI", "Game Theory"],
     link: "https://github.com/42pde-bakk/gomoku.git",
   },
@@ -51,7 +55,8 @@ export const projects: Project[] = [
     icon: "\uD83D\uDD75\uFE0F",
     category: "university",
     problem: "Exploit vulnerabilities in compiled binaries",
-    approach: "Reverse engineered C/C++ binaries using Ghidra, developed buffer overflow and format string exploits",
+    approach:
+      "Reverse engineered C/C++ binaries using Ghidra, developed buffer overflow and format string exploits",
     tech: ["Assembly", "Ghidra", "C", "Security"],
     link: "https://github.com/42pde-bakk/rainfall.git",
   },
@@ -60,7 +65,8 @@ export const projects: Project[] = [
     icon: "\uD83C\uDFD3",
     category: "university",
     problem: "Build a full-stack multiplayer game platform",
-    approach: "Real-time pong with matchmaking, guilds, chat, and friend system",
+    approach:
+      "Real-time pong with matchmaking, guilds, chat, and friend system",
     tech: ["TypeScript", "WebSockets", "Docker"],
     link: "https://github.com/42pde-bakk/ft_transcendence.git",
   },

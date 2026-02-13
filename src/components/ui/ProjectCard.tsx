@@ -13,7 +13,15 @@ interface ProjectCardProps {
   media?: { type: "image" | "video"; src: string };
 }
 
-const ProjectCard = ({ name, icon, problem, approach, tech, link, media }: ProjectCardProps) => {
+const ProjectCard = ({
+  name,
+  icon,
+  problem,
+  approach,
+  tech,
+  link,
+  media,
+}: ProjectCardProps) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
@@ -34,7 +42,11 @@ const ProjectCard = ({ name, icon, problem, approach, tech, link, media }: Proje
               />
             ) : (
               <div className="relative">
-                <video src={media.src} className="w-full h-40 object-cover" muted />
+                <video
+                  src={media.src}
+                  className="w-full h-40 object-cover"
+                  muted
+                />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/30">
                   <FaPlay className="text-white/80 text-2xl" />
                 </div>
@@ -48,10 +60,12 @@ const ProjectCard = ({ name, icon, problem, approach, tech, link, media }: Proje
             <h3 className="text-lg font-semibold text-white">{name}</h3>
           </div>
           <p className="text-sm text-slate_body mb-2">
-            <span className="text-accent_purple font-medium">Problem:</span> {problem}
+            <span className="text-accent_purple font-medium">Problem:</span>{" "}
+            {problem}
           </p>
           <p className="text-sm text-slate_body mb-4">
-            <span className="text-accent_cyan font-medium">Approach:</span> {approach}
+            <span className="text-accent_cyan font-medium">Approach:</span>{" "}
+            {approach}
           </p>
           <div className="flex flex-wrap gap-2 mb-4">
             {tech.map((t) => (
