@@ -1,3 +1,4 @@
+import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { SOCIAL_LINKS } from "../../data/social";
@@ -14,7 +15,11 @@ const icons = {
   email: HiMail,
 } as const;
 
-const SocialLinks = ({ iconSize = 24, className = "", showLabels = false }: SocialLinksProps) => (
+const SocialLinks = ({
+  iconSize = 24,
+  className = "",
+  showLabels = false,
+}: SocialLinksProps) => (
   <div className={`flex gap-4 ${className}`}>
     {Object.entries(SOCIAL_LINKS).map(([key, { url, label }]) => {
       const Icon = icons[key as keyof typeof icons];
@@ -23,7 +28,9 @@ const SocialLinks = ({ iconSize = 24, className = "", showLabels = false }: Soci
         <a
           key={key}
           href={url}
-          {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          {...(isExternal
+            ? { target: "_blank", rel: "noopener noreferrer" }
+            : {})}
           aria-label={label}
           className="flex items-center gap-2 text-slate_body hover:text-accent_purple transition-colors"
         >

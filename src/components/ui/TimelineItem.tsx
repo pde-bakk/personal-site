@@ -1,3 +1,4 @@
+import React from "react";
 import TechPill from "./TechPill";
 
 interface TimelineItemProps {
@@ -8,7 +9,13 @@ interface TimelineItemProps {
   tech: string[];
 }
 
-const TimelineItem = ({ company, role, dates, bullets, tech }: TimelineItemProps) => {
+const TimelineItem = ({
+  company,
+  role,
+  dates,
+  bullets,
+  tech,
+}: TimelineItemProps) => {
   return (
     <div className="relative pl-8 pb-10 border-l border-white/10 last:pb-0">
       <div className="timeline-dot absolute left-0 top-1 w-3 h-3 -translate-x-[7px] rounded-full bg-accent_purple" />

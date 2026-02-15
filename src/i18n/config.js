@@ -28,49 +28,56 @@ import zhProjects from "./locales/zh/projects.json";
 import zhSkills from "./locales/zh/skills.json";
 import zhContact from "./locales/zh/contact.json";
 
-i18n
-    .use(initReactI18next)
-    .init({
-        fallbackLng: "en",
-        lng: "en",
-        resources: {
-            en: {
-                home: enHome,
-                navigation: enNavigation,
-                codingame: enCodingame,
-                about: enAbout,
-                experience: enExperience,
-                projects: enProjects,
-                skills: enSkills,
-                contact: enContact,
-            },
-            nl: {
-                home: nlHome,
-                navigation: nlNavigation,
-                codingame: nlCodingame,
-                about: nlAbout,
-                experience: nlExperience,
-                projects: nlProjects,
-                skills: nlSkills,
-                contact: nlContact,
-            },
-            zh: {
-                home: zhHome,
-                navigation: zhNavigation,
-                codingame: zhCodingame,
-                about: zhAbout,
-                experience: zhExperience,
-                projects: zhProjects,
-                skills: zhSkills,
-                contact: zhContact,
-            },
-        },
-        ns: ["home", "navigation", "codingame", "about", "experience", "projects", "skills", "contact"],
-        defaultNS: "home",
-        interpolation: {
-            escapeValue: false,
-        },
-    });
+i18n.use(initReactI18next).init({
+  fallbackLng: "en",
+  lng: "en",
+  resources: {
+    en: {
+      home: enHome,
+      navigation: enNavigation,
+      codingame: enCodingame,
+      about: enAbout,
+      experience: enExperience,
+      projects: enProjects,
+      skills: enSkills,
+      contact: enContact,
+    },
+    nl: {
+      home: nlHome,
+      navigation: nlNavigation,
+      codingame: nlCodingame,
+      about: nlAbout,
+      experience: nlExperience,
+      projects: nlProjects,
+      skills: nlSkills,
+      contact: nlContact,
+    },
+    zh: {
+      home: zhHome,
+      navigation: zhNavigation,
+      codingame: zhCodingame,
+      about: zhAbout,
+      experience: zhExperience,
+      projects: zhProjects,
+      skills: zhSkills,
+      contact: zhContact,
+    },
+  },
+  ns: [
+    "home",
+    "navigation",
+    "codingame",
+    "about",
+    "experience",
+    "projects",
+    "skills",
+    "contact",
+  ],
+  defaultNS: "home",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 i18n.languages = ["en", "nl", "zh"];
 

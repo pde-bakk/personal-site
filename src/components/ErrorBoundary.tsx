@@ -1,4 +1,5 @@
 import { Component } from "react";
+import React from "react";
 import type { ErrorInfo, ReactNode } from "react";
 
 interface Props {
@@ -26,7 +27,9 @@ class ErrorBoundary extends Component<Props, State> {
         <div className="min-h-screen flex items-center justify-center bg-background_colour text-white">
           <div className="text-center">
             <h1 className="text-3xl font-bold mb-4">Something went wrong</h1>
-            <p className="text-slate_body mb-6">Please try refreshing the page.</p>
+            <p className="text-slate_body mb-6">
+              Please try refreshing the page.
+            </p>
             <button
               type="button"
               onClick={() => window.location.reload()}

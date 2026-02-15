@@ -5,6 +5,7 @@ import FadeInSection from "../ui/FadeInSection";
 import SectionHeader from "../ui/SectionHeader";
 import { experiences } from "../../data/experience";
 import { useTabFilter } from "../../hooks/useTabFilter";
+import React from "react";
 
 const Experience = () => {
   const { t } = useTranslation("experience");
@@ -14,13 +15,20 @@ const Experience = () => {
     { key: "education", label: t("tab_education") },
   ];
 
-  const { activeKey, setActiveKey, filteredItems } = useTabFilter(experiences, tabs);
+  const { activeKey, setActiveKey, filteredItems } = useTabFilter(
+    experiences,
+    tabs,
+  );
 
   return (
     <section id="experience" className="bg-background_colour py-20">
       <FadeInSection className="max-w-5xl mx-auto px-4">
         <SectionHeader title={t("title")} />
-        <TabToggle tabs={tabs} activeKey={activeKey} onTabChange={setActiveKey} />
+        <TabToggle
+          tabs={tabs}
+          activeKey={activeKey}
+          onTabChange={setActiveKey}
+        />
 
         <div>
           {filteredItems.map((exp, i) => (

@@ -11,9 +11,7 @@ export function useTabFilter<T extends { category: string }>(
 ) {
   const [activeKey, setActiveKey] = useState(tabs[0].key);
 
-  const filteredItems = items.filter(
-    (item) => item.category === activeKey,
-  );
+  const filteredItems = items.filter((item) => item.category === activeKey);
 
   return { activeKey, setActiveKey, filteredItems, tabs };
 }

@@ -21,7 +21,16 @@ export const experiences: Experience[] = [
       "Administered PostgreSQL databases with billions of records and optimized query performance",
       "Maintained CI/CD pipelines with GitHub Actions and managed AWS infrastructure",
     ],
-    tech: ["Go", "Rust", "Python", "PostgreSQL", "Kubernetes", "AWS", "gRPC", "Parquet"],
+    tech: [
+      "Go",
+      "Rust",
+      "Python",
+      "PostgreSQL",
+      "Kubernetes",
+      "AWS",
+      "gRPC",
+      "Parquet",
+    ],
   },
   {
     company: "42 Paris",

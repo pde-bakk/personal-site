@@ -15,7 +15,7 @@ export function useInView(threshold = 0.1) {
           observer.unobserve(element);
         }
       },
-      { threshold }
+      { threshold },
     );
 
     observer.observe(element);
