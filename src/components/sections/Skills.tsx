@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import FadeInSection from "../ui/FadeInSection";
 import SectionHeader from "../ui/SectionHeader";

@@ -70,5 +70,3 @@ export const experiences: Experience[] = [
     tech: ["C", "C++", "Docker", "Kubernetes", "Networking"],
   },
 ];
-
-export const EXPERIENCE_TABS = ["Work", "Education"];

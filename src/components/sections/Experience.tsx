@@ -5,7 +5,6 @@ import FadeInSection from "../ui/FadeInSection";
 import SectionHeader from "../ui/SectionHeader";
 import { experiences } from "../../data/experience";
 import { useTabFilter } from "../../hooks/useTabFilter";
-import React from "react";
 
 const Experience = () => {
   const { t } = useTranslation("experience");

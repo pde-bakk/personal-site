@@ -10,8 +10,7 @@
     "react-ga4": "^2.1.0",
     "react-i18next": "^16.5.4",
     "react-icons": "^5.5.0",
-    "react-scroll": "^1.9.0",
-    "react-use": "^17.6.0"
+    "react-scroll": "^1.9.0"
   },
   "husky": {
     "hooks": {
@@ -20,7 +19,7 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown",
-    "*.ts": "npx tslint"
+    "*.{ts,tsx}": "eslint --fix"
   },
   "scripts": {
     "dev": "vite",
