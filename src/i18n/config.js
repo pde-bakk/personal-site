@@ -3,7 +3,7 @@ import { initReactI18next } from "react-i18next";
 
 import enHome from "./locales/en/home.json";
 import enNavigation from "./locales/en/navigation.json";
-import enCodingame from "./locales/en/codingame.json";
+
 import enAbout from "./locales/en/about.json";
 import enExperience from "./locales/en/experience.json";
 import enProjects from "./locales/en/projects.json";
@@ -12,7 +12,7 @@ import enContact from "./locales/en/contact.json";
 
 import nlHome from "./locales/nl/home.json";
 import nlNavigation from "./locales/nl/navigation.json";
-import nlCodingame from "./locales/nl/codingame.json";
+
 import nlAbout from "./locales/nl/about.json";
 import nlExperience from "./locales/nl/experience.json";
 import nlProjects from "./locales/nl/projects.json";
@@ -21,7 +21,7 @@ import nlContact from "./locales/nl/contact.json";
 
 import zhHome from "./locales/zh/home.json";
 import zhNavigation from "./locales/zh/navigation.json";
-import zhCodingame from "./locales/zh/codingame.json";
+
 import zhAbout from "./locales/zh/about.json";
 import zhExperience from "./locales/zh/experience.json";
 import zhProjects from "./locales/zh/projects.json";
@@ -35,7 +35,7 @@ i18n.use(initReactI18next).init({
     en: {
       home: enHome,
       navigation: enNavigation,
-      codingame: enCodingame,
+
       about: enAbout,
       experience: enExperience,
       projects: enProjects,
@@ -45,7 +45,7 @@ i18n.use(initReactI18next).init({
     nl: {
       home: nlHome,
       navigation: nlNavigation,
-      codingame: nlCodingame,
+
       about: nlAbout,
       experience: nlExperience,
       projects: nlProjects,
@@ -55,7 +55,7 @@ i18n.use(initReactI18next).init({
     zh: {
       home: zhHome,
       navigation: zhNavigation,
-      codingame: zhCodingame,
+
       about: zhAbout,
       experience: zhExperience,
       projects: zhProjects,
@@ -66,7 +66,7 @@ i18n.use(initReactI18next).init({
   ns: [
     "home",
     "navigation",
-    "codingame",
+
     "about",
     "experience",
     "projects",

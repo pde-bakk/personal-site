@@ -72,5 +72,3 @@ export const projects: Project[] = [
     link: "https://github.com/42pde-bakk/ft_transcendence.git",
   },
 ];
-
-export const PROJECT_TABS = ["Work", "University"];

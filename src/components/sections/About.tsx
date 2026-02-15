@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import TechPill from "../ui/TechPill";
 import FadeInSection from "../ui/FadeInSection";
