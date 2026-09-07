@@ -48,7 +48,7 @@ const Hero = () => {
             index={1}
           />
           <MetricCard
-            value="3+ Languages"
+            value="4+ Languages"
             label={t("metric_languages")}
             index={2}
           />

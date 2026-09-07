@@ -3,21 +3,21 @@ import TechPill from "../ui/TechPill";
 import FadeInSection from "../ui/FadeInSection";
 
 const techStack = [
+  "Python",
   "Go",
   "Rust",
-  "Python",
-  "C/C++",
   "TypeScript",
+  "GenAI / LLM",
+  "Knowledge Graphs",
+  "Semantic Search",
   "PostgreSQL",
   "Kubernetes",
-  "Docker",
+  "Azure",
   "AWS",
   "gRPC",
   "Apache Parquet",
   "FastAPI",
-  "Axum",
   "CI/CD",
-  "Git",
 ];
 
 const AboutSection = () => {

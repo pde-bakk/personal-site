@@ -1,11 +1,11 @@
 {
   "greeting": "你好，我是",
   "title": "Peer de Bakker",
-  "subtitle": "高级软件工程师",
-  "roles": ["高级软件工程师", "系统程序员", "数据管道架构师", "竞技编程者"],
-  "description": "构建处理数十亿条记录的数据管道，用 Go、Rust 和 Python 打造高性能系统，并拆解事物以理解其运作方式。",
+  "subtitle": "AI 工程师",
+  "roles": ["AI 工程师", "软件工程师", "云与数据工程师", "竞技编程者"],
+  "description": "构建 AI 系统与基于知识图谱的语义搜索，用 Go、Rust 和 Python 打造高性能数据管道，并交付可扩展的云基础设施。",
   "image-alt-text": "Peer de Bakker",
   "metric_records": "生产管道中处理的记录",
   "metric_codingame": "Clash of Code — Codingame",
-  "metric_languages": "英语、荷兰语、法语"
+  "metric_languages": "英语、荷兰语、法语、中文"
 }

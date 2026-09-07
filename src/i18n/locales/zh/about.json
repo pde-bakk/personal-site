@@ -1,9 +1,9 @@
 {
   "section_title": "关于我",
   "title": "关于 Peer de Bakker",
-  "whoami": "我是一名热衷于网络安全和人工智能的高级软件工程师。",
-  "p1": "我的技术之旅始于阿姆斯特丹的 Codam（42 Network），在那里我用 C 语言写下了第一行代码。完成核心课程后，我在 Panartis 实习和工作，构建艺术收藏数据库的后端系统。之后我在巴黎 42 完成了硕士学位，专攻人工智能和网络安全。",
-  "p2": "现在我在 Auguria.io 担任软件工程师和数据工程师，用 Go、Python 和 Rust 构建处理数十亿条记录的数据聚类管道，用于异常检测。我管理数十个微服务的 Kubernetes 部署，管理 PostgreSQL 数据库，并维护 CI/CD 管道和 AWS 基础设施。",
+  "whoami": "我是一名 AI 工程师兼软件工程师，在数据系统和云基础设施方面有扎实背景。",
+  "p1": "我的技术之旅始于阿姆斯特丹的 Codam（42 Network），在那里我用 C 语言写下了第一行代码。完成核心课程以及网络安全与 AI 的 Advanced 方向后，我在 Panartis 构建艺术鉴定后端，并在巴黎 42 完成了 RNCP 7 资质。",
+  "p2": "在 Auguria.io，我主导用 Go、Python 和 Rust 构建处理数十亿条记录的数据聚类管道。如今我在 y.Digital 担任 AI 工程师，构建基于知识图谱的语义搜索，推进 RoboRecruiter，并为 Ally AI 平台交付组件。",
   "tech_stack": "技术栈",
   "image-alt-text": "毕业"
 }
