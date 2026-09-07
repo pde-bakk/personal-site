@@ -10,7 +10,7 @@
   ],
   "description": "Ik bouw AI-systemen en semantic search over kennisgrafen, ontwikkel high-performance datapipelines in Go, Rust en Python, en lever schaalbare cloudinfrastructuur op.",
   "image-alt-text": "Peer de Bakker",
-  "metric_records": "Records verwerkt in productiepipelines",
+  "metric_ydigital": "Semantic search over kennisgrafen bij y.Digital",
   "metric_codingame": "Clash of Code — Codingame",
   "metric_languages": "Engels, Nederlands, Frans, Chinees"
 }

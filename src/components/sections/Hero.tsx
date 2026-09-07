@@ -41,7 +41,11 @@ const Hero = () => {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-16">
-          <MetricCard value="Billions" label={t("metric_records")} index={0} />
+          <MetricCard
+            value="Agentic AI"
+            label={t("metric_ydigital")}
+            index={0}
+          />
           <MetricCard
             value="Top 0.1%"
             label={t("metric_codingame")}

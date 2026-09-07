@@ -10,7 +10,7 @@
   ],
   "description": "Building AI systems and semantic search over knowledge graphs, crafting high-performance data pipelines in Go, Rust, and Python, and shipping scalable cloud infrastructure.",
   "image-alt-text": "Peer de Bakker",
-  "metric_records": "Records processed in production pipelines",
+  "metric_ydigital": "Semantic search over knowledge graphs at y.Digital",
   "metric_codingame": "Clash of Code — Codingame",
   "metric_languages": "English, Dutch, French, Chinese"
 }
