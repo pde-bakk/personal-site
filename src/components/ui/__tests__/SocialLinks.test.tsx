@@ -6,7 +6,7 @@ describe("SocialLinks", () => {
     render(<SocialLinks />);
     expect(screen.getByLabelText("GitHub")).toBeInTheDocument();
     expect(screen.getByLabelText("LinkedIn")).toBeInTheDocument();
-    expect(screen.getByLabelText("Email")).toBeInTheDocument();
+    expect(screen.queryByLabelText("Email")).not.toBeInTheDocument();
   });
 
   it("sets target=_blank on external links", () => {
@@ -16,17 +16,10 @@ describe("SocialLinks", () => {
     expect(github).toHaveAttribute("rel", "noopener noreferrer");
   });
 
-  it("does not set target=_blank on mailto links", () => {
-    render(<SocialLinks />);
-    const email = screen.getByLabelText("Email");
-    expect(email).not.toHaveAttribute("target");
-  });
-
   it("shows labels when showLabels is true", () => {
     render(<SocialLinks showLabels />);
     expect(screen.getByText("GitHub")).toBeInTheDocument();
     expect(screen.getByText("LinkedIn")).toBeInTheDocument();
-    expect(screen.getByText("Email")).toBeInTheDocument();
   });
 
   it("hides labels by default", () => {

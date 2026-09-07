@@ -7,8 +7,4 @@ export const SOCIAL_LINKS = {
     url: "https://www.linkedin.com/in/peer-de-bakker",
     label: "LinkedIn",
   },
-  email: {
-    url: "mailto:peerdebakker@icloud.com",
-    label: "Email",
-  },
 } as const;

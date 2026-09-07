@@ -1,16 +1,16 @@
 {
   "greeting": "Hoi, ik ben",
   "title": "Peer de Bakker",
-  "subtitle": "Senior Software Engineer",
+  "subtitle": "AI Engineer",
   "roles": [
-    "Senior Software Engineer",
-    "Systeemprogrammeur",
-    "Data Pipeline Architect",
+    "AI Engineer",
+    "Software Engineer",
+    "Cloud & Data Engineer",
     "Competitive Coder"
   ],
-  "description": "Ik bouw datapipelines die miljarden records verwerken, ontwikkel high-performance systemen in Go, Rust en Python, en breek dingen uit elkaar om te begrijpen hoe ze werken.",
+  "description": "Ik bouw AI-systemen en semantic search over kennisgrafen, ontwikkel high-performance datapipelines in Go, Rust en Python, en lever schaalbare cloudinfrastructuur op.",
   "image-alt-text": "Peer de Bakker",
-  "metric_records": "Records verwerkt in productiepipelines",
+  "metric_ydigital": "Semantic search over kennisgrafen bij y.Digital",
   "metric_codingame": "Clash of Code — Codingame",
-  "metric_languages": "Engels, Nederlands, Frans"
+  "metric_languages": "Engels, Nederlands, Frans, Chinees"
 }

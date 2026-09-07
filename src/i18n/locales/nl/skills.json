@@ -1,7 +1,7 @@
 {
   "title": "Vaardigheden",
   "languages": "Talen",
+  "ai": "AI & Kennis",
   "data": "Data",
-  "infrastructure": "Infrastructuur",
-  "security": "Beveiliging"
+  "infrastructure": "Infrastructuur"
 }
